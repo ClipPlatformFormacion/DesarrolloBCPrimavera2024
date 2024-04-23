@@ -8,5 +8,6 @@
     "al.codeAnalyzers": [
         "${UICop}",
         "${CodeCop}"
-    ]
+    ],
+    "al.ruleSetPath": ".vscode/MisNormas.ruleset.json"
 }
