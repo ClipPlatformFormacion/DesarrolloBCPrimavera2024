@@ -4,6 +4,8 @@
     "CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
     "CRS.FileNamePatternPageCustomizations": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
     "CRS.ExtensionObjectNamePattern": "<BaseName>",
+    "CRS.ObjectNamePrefix": "CLIP ",
+    "CRS.RemovePrefixFromFilename": true,
     "al.enableCodeAnalysis": true,
     "al.codeAnalyzers": [
         "${UICop}",

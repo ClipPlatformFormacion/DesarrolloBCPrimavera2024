@@ -1,10 +1,10 @@
-page 50103 "Course Editions"
+page 50103 "CLIP Course Editions"
 {
     CaptionML = ENU = 'Course Editions', ESP = 'Ediciones curso';
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = "Course Edition";
+    SourceTable = "CLIP Course Edition";
 
     layout
     {

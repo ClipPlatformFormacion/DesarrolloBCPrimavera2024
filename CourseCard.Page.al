@@ -1,10 +1,10 @@
-page 50101 "Course Card"
+page 50101 "CLIP Course Card"
 {
     CaptionML = ENU = 'Course Card', ESP = 'Ficha curso';
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = None;
-    SourceTable = Course;
+    SourceTable = "CLIP Course";
 
     layout
     {
@@ -45,7 +45,7 @@ page 50101 "Course Card"
             action(CourseEditions)
             {
                 CaptionML = ENU = 'Editions', ESP = 'Ediciones';
-                RunObject = page "Course Editions";
+                RunObject = page "CLIP Course Editions";
                 RunPageLink = "Course No." = field("No.");
                 Image = ListPage;
             }

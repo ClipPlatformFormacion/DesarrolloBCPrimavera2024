@@ -1,4 +1,4 @@
-table 50102 "Course Edition"
+table 50102 "CLIP Course Edition"
 {
     DataClassification = CustomerContent;
     fields
@@ -6,7 +6,7 @@ table 50102 "Course Edition"
         field(1; "Course No."; Code[20])
         {
             CaptionML = ENU = 'Course No.', ESP = 'Nº curso';
-            TableRelation = Course;
+            TableRelation = "CLIP Course";
         }
         field(2; Edition; Code[20])
         {
