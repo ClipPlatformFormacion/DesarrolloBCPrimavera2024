@@ -8,9 +8,9 @@ table 50100 Course
 
             trigger OnValidate()
             var
-                IsHandled: Boolean;
                 ResSetup: Record "Courses Setup";
                 NoSeriesMgt: Codeunit NoSeriesManagement;
+                IsHandled: Boolean;
             begin
                 IsHandled := false;
                 OnBeforeValidateNo(Rec, xRec, IsHandled);
@@ -60,9 +60,9 @@ table 50100 Course
 
     trigger OnInsert()
     var
-        IsHandled: Boolean;
         ResSetup: Record "Courses Setup";
         NoSeriesMgt: Codeunit NoSeriesManagement;
+        IsHandled: Boolean;
     begin
         IsHandled := false;
         OnBeforeOnInsert(Rec, IsHandled, xRec);
@@ -78,10 +78,10 @@ table 50100 Course
 
     procedure AssistEdit(OldRes: Record Course) Result: Boolean
     var
-        IsHandled: Boolean;
         Res: Record Course;
         ResSetup: Record "Courses Setup";
         NoSeriesMgt: Codeunit NoSeriesManagement;
+        IsHandled: Boolean;
     begin
         IsHandled := false;
         OnBeforeAssistEdit(Rec, OldRes, IsHandled, Result);

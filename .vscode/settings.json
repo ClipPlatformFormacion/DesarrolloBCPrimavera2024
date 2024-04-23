@@ -6,6 +6,7 @@
     "CRS.ExtensionObjectNamePattern": "<BaseName>",
     "al.enableCodeAnalysis": true,
     "al.codeAnalyzers": [
-        "${UICop}"
+        "${UICop}",
+        "${CodeCop}"
     ]
 }
