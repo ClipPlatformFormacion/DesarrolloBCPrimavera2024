@@ -88,17 +88,15 @@ table 50100 Course
         if IsHandled then
             exit(Result);
 
-        with Res do begin
-            Res := Rec;
+        Res := Rec;
+        ResSetup.Get();
+        ResSetup.TestField("Course Nos.");
+        if NoSeriesMgt.SelectSeries(ResSetup."Course Nos.", OldRes."No. Series", Res."No. Series") then begin
             ResSetup.Get();
             ResSetup.TestField("Course Nos.");
-            if NoSeriesMgt.SelectSeries(ResSetup."Course Nos.", OldRes."No. Series", "No. Series") then begin
-                ResSetup.Get();
-                ResSetup.TestField("Course Nos.");
-                NoSeriesMgt.SetSeries("No.");
-                Rec := Res;
-                exit(true);
-            end;
+            NoSeriesMgt.SetSeries(Res."No.");
+            Rec := Res;
+            exit(true);
         end;
     end;
 
