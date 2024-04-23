@@ -5,6 +5,7 @@ table 50100 Course
         field(1; "No."; Code[20])
         {
             CaptionML = ENU = 'No.', ESP = 'Nº';
+            DataClassification = CustomerContent;
 
             trigger OnValidate()
             var
@@ -27,34 +28,41 @@ table 50100 Course
         field(2; Name; Text[100])
         {
             CaptionML = ENU = 'Name', ESP = 'Nombre';
+            DataClassification = CustomerContent;
         }
         field(3; "Content Description"; Text[2048])
         {
             CaptionML = ENU = 'Content Description', ESP = 'Temario';
+            DataClassification = CustomerContent;
         }
         field(4; "Duration (hours)"; Integer)
         {
             CaptionML = ENU = 'Duration (hours)', ESP = 'Duración (horas)';
+            DataClassification = CustomerContent;
         }
         field(5; Price; Decimal)
         {
             CaptionML = ENU = 'Price', ESP = 'Precio';
+            DataClassification = CustomerContent;
         }
         field(6; "Type (Option)"; Option)
         {
             CaptionML = ENU = 'Type (Option)', ESP = 'Tipo (Option)';
             OptionMembers = " ","Instructor-Lead","Video Tutorial";
             OptionCaptionML = ENU = ' ,Instructor-Lead,Video Tutorial', ESP = ' ,Guiado por profesor,Vídeo tutorial';
+            DataClassification = CustomerContent;
         }
         field(7; "Type (Enum)"; Enum "Course Type")
         {
             CaptionML = ENU = 'Type (Enum)', ESP = 'Tipo (Enum)';
+            DataClassification = CustomerContent;
         }
         field(56; "No. Series"; Code[20])
         {
             CaptionML = ENU = 'No. Series', ESP = 'Nº serie';
             Editable = false;
             TableRelation = "No. Series";
+            DataClassification = CustomerContent;
         }
     }
 

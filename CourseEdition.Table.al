@@ -1,5 +1,6 @@
 table 50102 "Course Edition"
 {
+    DataClassification = CustomerContent;
     fields
     {
         field(1; "Course No."; Code[20])
