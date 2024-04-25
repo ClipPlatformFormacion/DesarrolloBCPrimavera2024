@@ -1,6 +1,6 @@
 table 50101 "CLIP Courses Setup"
 {
-    CaptionML = ENU = 'Courses Setup', ESP = 'Configuración cursos';
+    Caption = 'Courses Setup', Comment = 'ESP="Configuración cursos"';
     DataClassification = CustomerContent;
 
     fields
@@ -12,7 +12,7 @@ table 50101 "CLIP Courses Setup"
         }
         field(2; "Course Nos."; Code[20])
         {
-            CaptionML = ENU = 'Course Nos.', ESP = 'Nº serie curso';
+            Caption = 'Course Nos.', Comment = 'ESP="Nº serie curso"';
             TableRelation = "No. Series";
         }
     }

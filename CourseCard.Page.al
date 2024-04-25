@@ -1,6 +1,6 @@
 page 50101 "CLIP Course Card"
 {
-    CaptionML = ENU = 'Course Card', ESP = 'Ficha curso';
+    Caption = 'Course Card', Comment = 'ESP="Ficha curso"';
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = None;
@@ -12,10 +12,10 @@ page 50101 "CLIP Course Card"
         {
             group(Course)
             {
-                CaptionML = ENU = 'Course', ESP = 'Curso';
+                Caption = 'Course', Comment = 'ESP="Curso"';
                 field("No."; Rec."No.")
                 {
-                    ToolTipML = ENU = 'A tooltip', ESP = 'Una ayuda';
+                    ToolTip = 'A tooltip', Comment = 'ESP="Una ayuda"';
                     trigger OnAssistEdit()
                     begin
                         if Rec.AssistEdit(xRec) then
@@ -26,14 +26,14 @@ page 50101 "CLIP Course Card"
             }
             group(TrainingDetails)
             {
-                CaptionML = ENU = 'Training Details', ESP = 'Detalles formativos';
+                Caption = 'Training Details', Comment = 'ESP="Detalles formativos"';
                 field("Content Description"; Rec."Content Description") { }
                 field("Duration (hours)"; Rec."Duration (hours)") { }
                 field("Type (Enum)"; Rec."Type (Enum)") { }
             }
             group(Invoicing)
             {
-                CaptionML = ENU = 'Invoicing', ESP = 'Facturación';
+                Caption = 'Invoicing', Comment = 'ESP="Facturación"';
                 field(Price; Rec.Price) { }
             }
         }
@@ -44,7 +44,7 @@ page 50101 "CLIP Course Card"
         {
             action(CourseEditions)
             {
-                CaptionML = ENU = 'Editions', ESP = 'Ediciones';
+                Caption = 'Editions', Comment = 'ESP="Ediciones"';
                 RunObject = page "CLIP Course Editions";
                 RunPageLink = "Course No." = field("No.");
                 Image = ListPage;
