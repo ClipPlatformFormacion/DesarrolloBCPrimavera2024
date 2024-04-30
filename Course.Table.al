@@ -86,6 +86,11 @@ table 50100 "CLIP Course"
             DataClassification = CustomerContent;
         }
     }
+    fieldgroups
+    {
+        fieldgroup(DropDown; "No.", Name, "Type (Enum)", "Duration (hours)") { }
+        fieldgroup(Brick; "No.", Name, "Type (Enum)", Price) { }
+    }
 
     trigger OnInsert()
     var
