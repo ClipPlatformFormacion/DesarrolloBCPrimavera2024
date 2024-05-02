@@ -1,7 +1,7 @@
 {
   "id": "ba13f99e-bcba-4f6b-9150-275d297c86cb",
   "name": "TestApp",
-  "publisher": "Default Publisher",
+  "publisher": "ClipPlatform",
   "version": "1.0.0.0",
   "brief": "",
   "description": "",
@@ -16,8 +16,8 @@
   "application": "23.0.0.0",
   "idRanges": [
     {
-      "from": 50100,
-      "to": 50149
+      "from": 50150,
+      "to": 50199
     }
   ],
   "resourceExposurePolicy": {
@@ -27,6 +27,6 @@
   },
   "runtime": "12.0",
   "features": [
-    "NoImplicitWith"
+    "NoImplicitWith","TranslationFile"
   ]
 }
