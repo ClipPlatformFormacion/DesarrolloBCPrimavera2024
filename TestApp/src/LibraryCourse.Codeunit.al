@@ -7,6 +7,7 @@ codeunit 50153 "CLIP Library - Course"
         LibraryERM: Codeunit "Library - ERM";
         LibraryRandom: Codeunit "Library - Random";
     begin
+        LibraryRandom.Init();
         CourseNoSeriesSetup();
         LibraryERM.FindGeneralPostingSetupInvtFull(GeneralPostingSetup);
         LibraryERM.FindVATPostingSetupInvt(VATPostingSetup);
@@ -18,6 +19,20 @@ codeunit 50153 "CLIP Library - Course"
         Course.Validate("Gen. Prod. Posting Group", GeneralPostingSetup."Gen. Prod. Posting Group");
         Course.Validate("VAT Prod. Posting Group", VATPostingSetup."VAT Prod. Posting Group");
         Course.Modify(true);
+    end;
+
+    procedure CreateEdition(CourseNo: Code[20]) CourseEdition: Record "CLIP Course Edition"
+    var
+        LibraryRandom: Codeunit "Library - Random";
+    begin
+        LibraryRandom.Init();
+
+        CourseEdition.Init();
+        CourseEdition.Validate("Course No.", CourseNo);
+        CourseEdition.Validate(Edition, LibraryRandom.RandText(20));
+        CourseEdition.Validate("Start Date", LibraryRandom.RandDate(10));
+        CourseEdition.Validate("Max. Students", LibraryRandom.RandIntInRange(10, 20));
+        CourseEdition.Insert(true);
     end;
 
     local procedure CourseNoSeriesSetup()

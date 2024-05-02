@@ -33,4 +33,41 @@ codeunit 50152 "CLIP Course Testing"
         Assert.AreEqual(Course."Gen. Prod. Posting Group", SalesLine."Gen. Prod. Posting Group", 'El grupo contable no es correcto');
         Assert.AreEqual(Course."VAT Prod. Posting Group", SalesLine."VAT Prod. Posting Group", 'El grupo contable no es correcto');
     end;
+
+    [Test]
+    procedure CourseSalesPosting()
+    var
+        Course: Record "CLIP Course";
+        CourseEdition: Record "CLIP Course Edition";
+        SalesHeader: Record "Sales Header";
+        SalesLine: Record "Sales Line";
+        SalesInvoiceLine: Record "Sales Invoice Line";
+        LibraryCourse: Codeunit "CLIP Library - Course";
+        LibrarySales: Codeunit "Library - Sales";
+        Assert: Codeunit Assert;
+        DocumentNo: Code[20];
+    begin
+        // [Scenario] Al registrar un documento de venta para un curso y edición, la edición se traslada correctamente a los documentos registrados
+
+        // [Given] Un curso y una edición
+        //          Un documento de venta para el curso y edición
+        Course := LibraryCourse.CreateCourse();
+        CourseEdition := LibraryCourse.CreateEdition(Course."No.");
+
+        LibrarySales.CreateSalesHeader(SalesHeader, "Sales Document Type"::Order, '');
+        LibrarySales.CreateSalesLineSimple(SalesLine, SalesHeader);
+        SalesLine.Validate(Type, "Sales Line Type"::"CLIP Course");
+        SalesLine.Validate("No.", Course."No.");
+        SalesLine.Validate("CLIP Course Edition", CourseEdition.Edition);
+        SalesLine.Validate(Quantity, 1);
+        SalesLine.Modify(true);
+
+        // [When] Registramos la venta
+        DocumentNo := LibrarySales.PostSalesDocument(SalesHeader, true, true);
+
+        // [Then] La edición está en los documentos registrados
+        SalesInvoiceLine.SetRange("Document No.", DocumentNo);
+        SalesInvoiceLine.FindFirst();
+        Assert.AreEqual(CourseEdition.Edition, SalesInvoiceLine."CLIP Course Edition", 'La edición en la línea de factura de venta no es correcto');
+    end;
 }
