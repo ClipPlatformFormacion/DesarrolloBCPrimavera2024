@@ -18,6 +18,7 @@ codeunit 50150 "CLIP Framework Test"
     procedure GetMin_T001()
     var
         GetMin: Codeunit "CLIP GetMin";
+        Assert: Codeunit Assert;
         ValorA: Integer;
         ValorB: Integer;
         Resultado: Integer;
@@ -33,8 +34,7 @@ codeunit 50150 "CLIP Framework Test"
         Resultado := GetMin.GetMin(ValorA, ValorB);
 
         // [Then] El resultado tiene que ser ValorA
-        if Resultado <> ValorA then
-            Error('El resultado no es correcto');
+        Assert.AreEqual(ValorA, Resultado, 'El resultado no es correcto');
     end;
 
     [Test]
