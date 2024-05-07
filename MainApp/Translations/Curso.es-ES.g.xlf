@@ -99,6 +99,12 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table CLIP Course Ledger Entry - Property Caption</note>
           <target>Mov. curso</target>
         </trans-unit>
+        <trans-unit id="Table 3082113822 - Field 1535828835 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Edition</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Edición"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CLIP Course Ledger Entry - Field Course Edition - Property Caption</note>
+          <target>Edición</target>
+        </trans-unit>
         <trans-unit id="Table 3082113822 - Field 1667959142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Course No.</source>
           <note from="Developer" annotates="general" priority="2"/>
@@ -202,6 +208,16 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page CLIP Course Card - Action CourseEditions - Property Caption</note>
           <target>Ediciones</target>
         </trans-unit>
+        <trans-unit id="Page 3927749657 - Action 1111476699 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View the history of transactions that have been posted for the selected record.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CLIP Course Card - Action Ledger E&amp;ntries - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3927749657 - Action 1111476699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ledger E&amp;ntries</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CLIP Course Card - Action Ledger E&amp;ntries - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2479163360 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Course Editions</source>
           <note from="Developer" annotates="general" priority="2">ESP="Ediciones curso"</note>
@@ -290,6 +306,16 @@
           <note from="Developer" annotates="general" priority="2">ESP="Ediciones"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page CLIP Course List - Action CourseEditions - Property Caption</note>
           <target>Ediciones</target>
+        </trans-unit>
+        <trans-unit id="Page 2667201611 - Action 1111476699 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View the history of transactions that have been posted for the selected record.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CLIP Course List - Action Ledger E&amp;ntries - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2667201611 - Action 1111476699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ledger E&amp;ntries</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CLIP Course List - Action Ledger E&amp;ntries - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1177735025 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Courses Setup</source>

@@ -37,6 +37,10 @@ page 50104 "CLIP Course Ledger Entries"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the number of the Course.';
                 }
+                field("Course Edition"; Rec."Course Edition")
+                {
+                    ApplicationArea = All;
+                }
                 field(Description; Rec.Description)
                 {
                     ApplicationArea = All;

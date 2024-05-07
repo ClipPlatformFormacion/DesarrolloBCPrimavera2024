@@ -28,6 +28,11 @@ table 50103 "CLIP Course Ledger Entry"
             Caption = 'Course No.';
             TableRelation = "CLIP Course";
         }
+        field(6; "Course Edition"; Code[20])
+        {
+            Caption = 'Edition', comment = 'ESP="Edición"';
+            TableRelation = "CLIP Course Edition";
+        }
         field(7; Description; Text[100])
         {
             Caption = 'Description';
