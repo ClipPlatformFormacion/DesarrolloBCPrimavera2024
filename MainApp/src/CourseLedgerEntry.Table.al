@@ -140,6 +140,7 @@ table 50103 "CLIP Course Ledger Entry"
         {
             Clustered = true;
         }
+        key(SK1; "Course No.", "Posting Date") { }
     }
 
     fieldgroups

@@ -34,6 +34,18 @@ page 50100 "CLIP Course List"
                 RunPageLink = "Course No." = field("No.");
                 Image = ListPage;
             }
+            action("Ledger E&ntries")
+            {
+                ApplicationArea = All;
+                Caption = 'Ledger E&ntries';
+                Image = ResourceLedger;
+                RunObject = Page "CLIP Course Ledger Entries";
+                RunPageLink = "Course No." = field("No.");
+                RunPageView = sorting("Course No.")
+                                  order(Descending);
+                ShortCutKey = 'Ctrl+F7';
+                ToolTip = 'View the history of transactions that have been posted for the selected record.';
+            }
         }
     }
 }
