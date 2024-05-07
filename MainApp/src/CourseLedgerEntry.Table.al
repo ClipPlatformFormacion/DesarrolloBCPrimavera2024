@@ -140,42 +140,17 @@ table 50103 "CLIP Course Ledger Entry"
         {
             Clustered = true;
         }
-        key(Key2; "Course No.", "Posting Date")
-        {
-        }
-        key(Key3; "Entry Type", Chargeable, "Unit of Measure Code", "Course No.", "Posting Date")
-        {
-            SumIndexFields = Quantity, "Total Cost", "Total Price", "Quantity (Base)";
-        }
-        key(Key4; "Entry Type", Chargeable, "Unit of Measure Code", "Course Group No.", "Posting Date")
-        {
-            SumIndexFields = Quantity, "Total Cost", "Total Price", "Quantity (Base)";
-        }
-        key(Key5; "Document No.", "Posting Date")
-        {
-        }
-        key(Key6; "Order Type", "Order No.", "Order Line No.", "Entry Type")
-        {
-            SumIndexFields = Quantity;
-        }
-        key(Key7; "Source No.", "Source Type", "Entry Type", "Posting Date")
-        {
-            SumIndexFields = "Total Cost";
-        }
-        key(Key8; "Job No.")
-        {
-        }
     }
 
     fieldgroups
     {
-        fieldgroup(DropDown; "Entry No.", Description, "Entry Type", "Document No.", "Posting Date")
+        fieldgroup(DropDown; "Entry No.", Description, "Document No.", "Posting Date")
         {
         }
     }
 
-    var
-        DimMgt: Codeunit DimensionManagement;
+    // var
+    //     DimMgt: Codeunit DimensionManagement;
 
     procedure GetLastEntryNo(): Integer;
     var
@@ -186,46 +161,27 @@ table 50103 "CLIP Course Ledger Entry"
 
     procedure CopyFromResJnlLine(ResJnlLine: Record "Res. Journal Line")
     begin
-        "Entry Type" := ResJnlLine."Entry Type";
+        // "Entry Type" := ResJnlLine."Entry Type";
         "Document No." := ResJnlLine."Document No.";
         "External Document No." := ResJnlLine."External Document No.";
-        "Order Type" := ResJnlLine."Order Type";
-        "Order No." := ResJnlLine."Order No.";
-        "Order Line No." := ResJnlLine."Order Line No.";
         "Posting Date" := ResJnlLine."Posting Date";
         "Document Date" := ResJnlLine."Document Date";
-        "Course No." := ResJnlLine."Course No.";
-        "Course Group No." := ResJnlLine."Course Group No.";
+        // "Course No." := ResJnlLine."Course No."; //TODO Descomentar
         Description := ResJnlLine.Description;
-        "Work Type Code" := ResJnlLine."Work Type Code";
-        "Job No." := ResJnlLine."Job No.";
-        "Unit of Measure Code" := ResJnlLine."Unit of Measure Code";
         Quantity := ResJnlLine.Quantity;
-        "Direct Unit Cost" := ResJnlLine."Direct Unit Cost";
-        "Unit Cost" := ResJnlLine."Unit Cost";
-        "Total Cost" := ResJnlLine."Total Cost";
         "Unit Price" := ResJnlLine."Unit Price";
         "Total Price" := ResJnlLine."Total Price";
-        "Global Dimension 1 Code" := ResJnlLine."Shortcut Dimension 1 Code";
-        "Global Dimension 2 Code" := ResJnlLine."Shortcut Dimension 2 Code";
-        "Dimension Set ID" := ResJnlLine."Dimension Set ID";
-        "Source Code" := ResJnlLine."Source Code";
-        "Journal Batch Name" := ResJnlLine."Journal Batch Name";
-        "Reason Code" := ResJnlLine."Reason Code";
-        "Gen. Bus. Posting Group" := ResJnlLine."Gen. Bus. Posting Group";
-        "Gen. Prod. Posting Group" := ResJnlLine."Gen. Prod. Posting Group";
-        "No. Series" := ResJnlLine."Posting No. Series";
-        "Source Type" := ResJnlLine."Source Type";
-        "Source No." := ResJnlLine."Source No.";
-        "Qty. per Unit of Measure" := ResJnlLine."Qty. per Unit of Measure";
+        // "Global Dimension 1 Code" := ResJnlLine."Shortcut Dimension 1 Code";
+        // "Global Dimension 2 Code" := ResJnlLine."Shortcut Dimension 2 Code";
+        // "Dimension Set ID" := ResJnlLine."Dimension Set ID";
 
         OnAfterCopyFromResJnlLine(Rec, ResJnlLine);
     end;
 
-    procedure ShowDimensions()
-    begin
-        DimMgt.ShowDimensionSet("Dimension Set ID", StrSubstNo('%1 %2', TableCaption(), "Entry No."));
-    end;
+    // procedure ShowDimensions()
+    // begin
+    //     DimMgt.ShowDimensionSet("Dimension Set ID", StrSubstNo('%1 %2', TableCaption(), "Entry No."));
+    // end;
 
     [IntegrationEvent(false, false)]
     procedure OnAfterCopyFromResJnlLine(var ResLedgerEntry: Record "CLIP Course Ledger Entry"; ResJournalLine: Record "Res. Journal Line")
