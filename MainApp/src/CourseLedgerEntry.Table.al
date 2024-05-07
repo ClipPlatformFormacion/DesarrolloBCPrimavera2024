@@ -165,23 +165,24 @@ table 50103 "CLIP Course Ledger Entry"
         exit(FindRecordManagement.GetLastEntryIntFieldValue(Rec, FieldNo("Entry No.")))
     end;
 
-    procedure CopyFromResJnlLine(ResJnlLine: Record "Res. Journal Line")
+    procedure CopyFromResJnlLine(CourseJournalLine: Record "CLIP Course Journal Line")
     begin
-        // "Entry Type" := ResJnlLine."Entry Type";
-        "Document No." := ResJnlLine."Document No.";
-        "External Document No." := ResJnlLine."External Document No.";
-        "Posting Date" := ResJnlLine."Posting Date";
-        "Document Date" := ResJnlLine."Document Date";
-        // "Course No." := ResJnlLine."Course No."; //TODO Descomentar
-        Description := ResJnlLine.Description;
-        Quantity := ResJnlLine.Quantity;
-        "Unit Price" := ResJnlLine."Unit Price";
-        "Total Price" := ResJnlLine."Total Price";
-        // "Global Dimension 1 Code" := ResJnlLine."Shortcut Dimension 1 Code";
-        // "Global Dimension 2 Code" := ResJnlLine."Shortcut Dimension 2 Code";
-        // "Dimension Set ID" := ResJnlLine."Dimension Set ID";
+        // "Entry Type" := CourseJournalLine."Entry Type";
+        "Document No." := CourseJournalLine."Document No.";
+        "External Document No." := CourseJournalLine."External Document No.";
+        "Posting Date" := CourseJournalLine."Posting Date";
+        "Document Date" := CourseJournalLine."Document Date";
+        "Course No." := CourseJournalLine."Course No.";
+        "Course Edition" := CourseJournalLine."Course Edition";
+        Description := CourseJournalLine.Description;
+        Quantity := CourseJournalLine.Quantity;
+        "Unit Price" := CourseJournalLine."Unit Price";
+        "Total Price" := CourseJournalLine."Total Price";
+        // "Global Dimension 1 Code" := CourseJournalLine."Shortcut Dimension 1 Code";
+        // "Global Dimension 2 Code" := CourseJournalLine."Shortcut Dimension 2 Code";
+        // "Dimension Set ID" := CourseJournalLine."Dimension Set ID";
 
-        OnAfterCopyFromResJnlLine(Rec, ResJnlLine);
+        OnAfterCopyFromCourseJournalLine(Rec, CourseJournalLine);
     end;
 
     // procedure ShowDimensions()
@@ -190,7 +191,7 @@ table 50103 "CLIP Course Ledger Entry"
     // end;
 
     [IntegrationEvent(false, false)]
-    procedure OnAfterCopyFromResJnlLine(var ResLedgerEntry: Record "CLIP Course Ledger Entry"; ResJournalLine: Record "Res. Journal Line")
+    procedure OnAfterCopyFromCourseJournalLine(var CourseLedgerEntry: Record "CLIP Course Ledger Entry"; CourseJournalLine: Record "CLIP Course Journal Line")
     begin
     end;
 }
