@@ -26,7 +26,6 @@ codeunit 50100 "CLIP Course - Sales Management"
     var
         CourseLedgerEntry: Record "CLIP Course Ledger Entry";
         CourseEdition: Record "CLIP Course Edition";
-        TotalQuantity: Decimal;
     begin
         if Rec.Type <> Rec.Type::"CLIP Course" then
             exit;
@@ -35,17 +34,14 @@ codeunit 50100 "CLIP Course - Sales Management"
 
         CourseLedgerEntry.SetRange("Course No.", Rec."No.");
         CourseLedgerEntry.SetRange("Course Edition", Rec."CLIP Course Edition");
-        CourseLedgerEntry.SetLoadFields(Quantity);
-        if CourseLedgerEntry.FindSet() then
-            repeat
-                TotalQuantity := TotalQuantity + CourseLedgerEntry.Quantity;
-            until CourseLedgerEntry.Next() = 0;
+        CourseLedgerEntry.CalcSums(Quantity);
+
 
         CourseEdition.SetLoadFields("Max. Students");
         CourseEdition.Get(Rec."No.", Rec."CLIP Course Edition");
-        if (TotalQuantity + Rec.Quantity) > CourseEdition."Max. Students" then
+        if (CourseLedgerEntry.Quantity + Rec.Quantity) > CourseEdition."Max. Students" then
             Message('La venta actual para el curso %1 edición %2 superará el número máximo de alumnos %3 (ventas previas: %4)',
-                        Rec."No.", Rec."CLIP Course Edition", CourseEdition."Max. Students", TotalQuantity);
+                        Rec."No.", Rec."CLIP Course Edition", CourseEdition."Max. Students", CourseLedgerEntry.Quantity);
     end;
 
 
