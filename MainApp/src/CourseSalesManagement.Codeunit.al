@@ -10,6 +10,42 @@ codeunit 50100 "CLIP Course - Sales Management"
         Result := true;
     end;
 
+    [EventSubscriber(ObjectType::Table, Database::"Sales Line", OnAfterValidateEvent, Quantity, false, false)]
+    local procedure OnAfterValidate_Quantity_CheckSalesForCourseEdition(var Rec: Record "Sales Line")
+    begin
+        CheckSalesForCourseEdition(Rec);
+    end;
+
+    [EventSubscriber(ObjectType::Table, Database::"Sales Line", OnAfterValidateEvent, "CLIP Course Edition", false, false)]
+    local procedure OnAfterValidate_CourseEdition_CheckSalesForCourseEdition(var Rec: Record "Sales Line")
+    begin
+        CheckSalesForCourseEdition(Rec);
+    end;
+
+    local procedure CheckSalesForCourseEdition(var Rec: Record "Sales Line")
+    var
+        CourseLedgerEntry: Record "CLIP Course Ledger Entry";
+        CourseEdition: Record "CLIP Course Edition";
+        TotalQuantity: Decimal;
+    begin
+        if Rec.Type <> Rec.Type::"CLIP Course" then
+            exit;
+        if Rec."CLIP Course Edition" = '' then
+            exit;
+
+        CourseLedgerEntry.SetRange("Course No.", Rec."No.");
+        CourseLedgerEntry.SetRange("Course Edition", Rec."CLIP Course Edition");
+        if CourseLedgerEntry.FindSet() then
+            repeat
+                TotalQuantity := TotalQuantity + CourseLedgerEntry.Quantity;
+            until CourseLedgerEntry.Next() = 0;
+
+        CourseEdition.Get(Rec."No.", Rec."CLIP Course Edition");
+        if (TotalQuantity + Rec.Quantity) > CourseEdition."Max. Students" then
+            Message('La venta actual para el curso %1 edición %2 superará el número máximo de alumnos %3 (ventas previas: %4)',
+                        Rec."No.", Rec."CLIP Course Edition", CourseEdition."Max. Students", TotalQuantity);
+    end;
+
 
     [EventSubscriber(ObjectType::Table, Database::"Sales Line", 'OnAfterAssignFieldsForNo', '', false, false)]
     local procedure SalesLine_OnAfterAssignFieldsForNo(var SalesLine: Record "Sales Line"; SalesHeader: Record "Sales Header")
