@@ -52,11 +52,6 @@ codeunit 50101 "CLIP Course Journal-Post Line"
 
             GetGLSetup();
             CourseLedgerEntry."Total Price" := Round(CourseLedgerEntry."Total Price");
-
-            CourseLedgerEntry.Quantity := -CourseLedgerEntry.Quantity;
-            CourseLedgerEntry."Total Price" := -CourseLedgerEntry."Total Price";
-
-
             CourseLedgerEntry."Entry No." := NextEntryNo;
 
             OnBeforeCourseLedgerEntryInsert(CourseLedgerEntry, ResJournalLineGlobal);

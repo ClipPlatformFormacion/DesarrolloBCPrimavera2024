@@ -117,4 +117,51 @@ codeunit 50152 "CLIP Course Testing"
         Assert.AreEqual(SalesHeader."Document Date", CourseLedgerEntry."Document Date", 'Dato incorrecto');
         Assert.AreEqual(SalesHeader."External Document No.", CourseLedgerEntry."External Document No.", 'Dato incorrecto');
     end;
+
+    [Test]
+    procedure CourseSalesPostingCreditMemo_CourseLedgerEntry()
+    var
+        Course: Record "CLIP Course";
+        CourseEdition: Record "CLIP Course Edition";
+        SalesHeader: Record "Sales Header";
+        SalesLine: Record "Sales Line";
+        CourseLedgerEntry: Record "CLIP Course Ledger Entry";
+        LibraryCourse: Codeunit "CLIP Library - Course";
+        LibrarySales: Codeunit "Library - Sales";
+        Assert: Codeunit Assert;
+        DocumentNo: Code[20];
+    begin
+        // [Scenario] Al registrar un documento de venta para un curso y edición, se genera un movimiento de curso
+
+        // [Given] Un curso y una edición
+        //          Un documento de venta para el curso y edición
+        Course := LibraryCourse.CreateCourse();
+        CourseEdition := LibraryCourse.CreateEdition(Course."No.");
+
+        LibrarySales.CreateSalesHeader(SalesHeader, "Sales Document Type"::"Credit Memo", '');
+        LibrarySales.CreateSalesLineSimple(SalesLine, SalesHeader);
+        SalesLine.Validate(Type, "Sales Line Type"::"CLIP Course");
+        SalesLine.Validate("No.", Course."No.");
+        SalesLine.Validate("CLIP Course Edition", CourseEdition.Edition);
+        SalesLine.Validate(Quantity, 1);
+        SalesLine.Modify(true);
+
+        // [When] Registramos la venta
+        DocumentNo := LibrarySales.PostSalesDocument(SalesHeader, true, true);
+
+        // [Then] La edición está en los documentos registrados
+        CourseLedgerEntry.SetRange("Document No.", DocumentNo);
+        Assert.AreEqual(1, CourseLedgerEntry.Count(), 'El Nº de movimientos es incorrecto');
+        CourseLedgerEntry.FindFirst();
+
+        Assert.AreEqual(SalesHeader."Posting Date", CourseLedgerEntry."Posting Date", 'Dato incorrecto');
+        Assert.AreEqual(SalesLine."No.", CourseLedgerEntry."Course No.", 'Dato incorrecto');
+        Assert.AreEqual(SalesLine."CLIP Course Edition", CourseLedgerEntry."Course Edition", 'Dato incorrecto');
+        Assert.AreEqual(SalesLine.Description, CourseLedgerEntry.Description, 'Dato incorrecto');
+        Assert.AreEqual(-SalesLine.Quantity, CourseLedgerEntry.Quantity, 'Dato incorrecto');
+        Assert.AreEqual(SalesLine."Unit Price", CourseLedgerEntry."Unit Price", 'Dato incorrecto');
+        Assert.AreEqual(-SalesLine.Quantity * SalesLine."Unit Price", CourseLedgerEntry."Total Price", 'Dato incorrecto');
+        Assert.AreEqual(SalesHeader."Document Date", CourseLedgerEntry."Document Date", 'Dato incorrecto');
+        Assert.AreEqual(SalesHeader."External Document No.", CourseLedgerEntry."External Document No.", 'Dato incorrecto');
+    end;
 }
