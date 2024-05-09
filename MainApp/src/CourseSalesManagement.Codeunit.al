@@ -35,11 +35,13 @@ codeunit 50100 "CLIP Course - Sales Management"
 
         CourseLedgerEntry.SetRange("Course No.", Rec."No.");
         CourseLedgerEntry.SetRange("Course Edition", Rec."CLIP Course Edition");
+        CourseLedgerEntry.SetLoadFields(Quantity);
         if CourseLedgerEntry.FindSet() then
             repeat
                 TotalQuantity := TotalQuantity + CourseLedgerEntry.Quantity;
             until CourseLedgerEntry.Next() = 0;
 
+        CourseEdition.SetLoadFields("Max. Students");
         CourseEdition.Get(Rec."No.", Rec."CLIP Course Edition");
         if (TotalQuantity + Rec.Quantity) > CourseEdition."Max. Students" then
             Message('La venta actual para el curso %1 edición %2 superará el número máximo de alumnos %3 (ventas previas: %4)',
