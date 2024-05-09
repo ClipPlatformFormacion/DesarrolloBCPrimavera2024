@@ -24,7 +24,6 @@ codeunit 50100 "CLIP Course - Sales Management"
 
     local procedure CheckSalesForCourseEdition(var Rec: Record "Sales Line")
     var
-        CourseLedgerEntry: Record "CLIP Course Ledger Entry";
         CourseEdition: Record "CLIP Course Edition";
     begin
         if Rec.Type <> Rec.Type::"CLIP Course" then
@@ -32,16 +31,12 @@ codeunit 50100 "CLIP Course - Sales Management"
         if Rec."CLIP Course Edition" = '' then
             exit;
 
-        CourseLedgerEntry.SetRange("Course No.", Rec."No.");
-        CourseLedgerEntry.SetRange("Course Edition", Rec."CLIP Course Edition");
-        CourseLedgerEntry.CalcSums(Quantity);
-
-
-        CourseEdition.SetLoadFields("Max. Students");
+        CourseEdition.SetLoadFields("Max. Students", "Sales (Qty.)");
         CourseEdition.Get(Rec."No.", Rec."CLIP Course Edition");
-        if (CourseLedgerEntry.Quantity + Rec.Quantity) > CourseEdition."Max. Students" then
+        CourseEdition.CalcFields("Sales (Qty.)");
+        if (CourseEdition."Sales (Qty.)" + Rec.Quantity) > CourseEdition."Max. Students" then
             Message('La venta actual para el curso %1 edición %2 superará el número máximo de alumnos %3 (ventas previas: %4)',
-                        Rec."No.", Rec."CLIP Course Edition", CourseEdition."Max. Students", CourseLedgerEntry.Quantity);
+                        Rec."No.", Rec."CLIP Course Edition", CourseEdition."Max. Students", CourseEdition."Sales (Qty.)");
     end;
 
 
