@@ -1,5 +1,7 @@
 table 50100 "CLIP Course"
 {
+    LookupPageId = "CLIP Course List";
+
     fields
     {
         field(1; "No."; Code[20])
@@ -39,11 +41,13 @@ table 50100 "CLIP Course"
         {
             Caption = 'Duration (hours)', Comment = 'ESP="Duración (horas)"';
             DataClassification = CustomerContent;
+            BlankZero = true;
         }
         field(5; Price; Decimal)
         {
             Caption = 'Price', Comment = 'ESP="Precio"';
             DataClassification = CustomerContent;
+            BlankZero = true;
         }
         field(6; "Type (Option)"; Option)
         {

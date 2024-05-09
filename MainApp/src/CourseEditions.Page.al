@@ -15,20 +15,11 @@ page 50103 "CLIP Course Editions"
                 field("Course No."; Rec."Course No.")
                 {
                     Visible = false;
-                    ApplicationArea = All;
                 }
-                field(Edition; Rec.Edition)
-                {
-                    ApplicationArea = All;
-                }
-                field("Start Date"; Rec."Start Date")
-                {
-                    ApplicationArea = All;
-                }
-                field("Max. Students"; Rec."Max. Students")
-                {
-                    ApplicationArea = All;
-                }
+                field(Edition; Rec.Edition) { }
+                field("Start Date"; Rec."Start Date") { }
+                field("Max. Students"; Rec."Max. Students") { }
+                field("Sales (Qty.)"; Rec."Sales (Qty.)") { }
             }
         }
     }

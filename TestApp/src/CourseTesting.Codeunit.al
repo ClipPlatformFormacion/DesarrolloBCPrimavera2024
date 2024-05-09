@@ -103,7 +103,9 @@ codeunit 50152 "CLIP Course Testing"
         DocumentNo := LibrarySales.PostSalesDocument(SalesHeader, true, true);
 
         // [Then] La edición está en los documentos registrados
+#pragma warning disable AA0210
         CourseLedgerEntry.SetRange("Document No.", DocumentNo);
+#pragma warning restore
         Assert.AreEqual(1, CourseLedgerEntry.Count(), 'El Nº de movimientos es incorrecto');
         CourseLedgerEntry.FindFirst();
 
@@ -150,7 +152,9 @@ codeunit 50152 "CLIP Course Testing"
         DocumentNo := LibrarySales.PostSalesDocument(SalesHeader, true, true);
 
         // [Then] La edición está en los documentos registrados
+#pragma warning disable AA0210
         CourseLedgerEntry.SetRange("Document No.", DocumentNo);
+#pragma warning restore
         Assert.AreEqual(1, CourseLedgerEntry.Count(), 'El Nº de movimientos es incorrecto');
         CourseLedgerEntry.FindFirst();
 
