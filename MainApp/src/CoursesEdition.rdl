@@ -11,6 +11,25 @@
       <rd:DataSourceID>ec30ffb9-4760-431a-9d0b-52d45d3c607b</rd:DataSourceID>
     </DataSource>
   </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+      <Fields>
+        <Field Name="No">
+          <DataField>No</DataField>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+        </Field>
+        <Field Name="DurationHours">
+          <DataField>DurationHours</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -22,7 +41,7 @@
                   <Width>1.25347in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.25347in</Width>
+                  <Width>4.90452in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.25347in</Width>
@@ -245,10 +264,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>0.41021in</Top>
-            <Left>0.37896in</Left>
+            <Top>0in</Top>
+            <Left>0in</Left>
             <Height>0.80208in</Height>
-            <Width>3.76041in</Width>
+            <Width>7.41146in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -256,11 +275,18 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>2in</Height>
+        <Height>2.03728cm</Height>
         <Style />
       </Body>
-      <Width>6.5in</Width>
+      <Width>18.8251cm</Width>
       <Page>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <LeftMargin>1cm</LeftMargin>
+        <RightMargin>1cm</RightMargin>
+        <TopMargin>1cm</TopMargin>
+        <BottomMargin>1cm</BottomMargin>
+        <ColumnSpacing>1.27cm</ColumnSpacing>
         <Style />
       </Page>
     </ReportSection>
@@ -354,25 +380,6 @@ End Function
 </Code>
   <Language>=User!Language</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
-  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Fields>
-        <Field Name="No">
-          <DataField>No</DataField>
-        </Field>
-        <Field Name="Name">
-          <DataField>Name</DataField>
-        </Field>
-        <Field Name="DurationHours">
-          <DataField>DurationHours</DataField>
-        </Field>
-      </Fields>
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-    </DataSet>
-  </DataSets>
 </Report>
