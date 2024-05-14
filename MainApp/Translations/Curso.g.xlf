@@ -418,6 +418,16 @@
           <note from="Developer" annotates="general" priority="2">ESP="Cursos y Ediciones"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Report CLIP Courses &amp; Editions - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 3019079251 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Opciones"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report CLIP Courses &amp; Editions - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3019079251 - Control 2935734280 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PrintDetails</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Imprimir detalles"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report CLIP Courses &amp; Editions - Control PrintDetailsControl - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Report 2335523760 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Update Course Prices</source>
           <note from="Developer" annotates="general" priority="2">ESP="Actualiza los precios de los cursos"</note>
