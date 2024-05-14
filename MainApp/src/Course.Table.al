@@ -1,5 +1,6 @@
 table 50100 "CLIP Course"
 {
+    Caption = 'Course', comment = 'ESP="Curso"';
     LookupPageId = "CLIP Course List";
 
     fields

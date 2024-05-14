@@ -3,6 +3,12 @@
   <file datatype="xml" source-language="en-US" target-language="es-ES" original="Curso">
     <body>
       <group id="body">
+        <trans-unit id="Table 2553370741 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Course</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Curso"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CLIP Course - Property Caption</note>
+          <target>Curso</target>
+        </trans-unit>
         <trans-unit id="Table 2553370741 - Field 81686673 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Content Description</source>
           <note from="Developer" annotates="general" priority="2">ESP="Temario"</note>
@@ -442,6 +448,30 @@
           <source>Specifies the number series code you can use to assign numbers to Courses.</source>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page CLIP Courses Setup - Control Course Nos. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 2335523760 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update Course Prices</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Actualiza los precios de los cursos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report CLIP Update Course Prices - Property Caption</note>
+          <target>Actualiza los precios de los cursos</target>
+        </trans-unit>
+        <trans-unit id="Report 2335523760 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Opciones"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report CLIP Update Course Prices - Control Options - Property Caption</note>
+          <target>Opciones</target>
+        </trans-unit>
+        <trans-unit id="Report 2335523760 - Control 1158296446 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Percentaje by which prices will be incremented</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Porcentaje de incremento de los precios"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report CLIP Update Course Prices - Control PercentajeControl - Property ToolTip</note>
+          <target>Porcentaje de incremento de los precios</target>
+        </trans-unit>
+        <trans-unit id="Report 2335523760 - Control 1158296446 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Percentaje</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Porcentaje"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report CLIP Update Course Prices - Control PercentajeControl - Property Caption</note>
+          <target>Porcentaje</target>
         </trans-unit>
         <trans-unit id="TableExtension 399710922 - Field 346014409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1173465396">
           <source>Course Edition</source>
