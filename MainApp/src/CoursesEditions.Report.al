@@ -14,9 +14,9 @@ report 50101 "CLIP Courses & Editions"
                 DataItemLinkReference = Course;
                 DataItemLink = "Course No." = field("No.");
             }
-            column(No; "No.") { }
-            column(Name; "Name") { }
-            column(DurationHours; "Duration (hours)") { }
+            column(No; "No.") { IncludeCaption = true; }
+            column(Name; "Name") { IncludeCaption = true; }
+            column(DurationHours; "Duration (hours)") { IncludeCaption = true; }
         }
     }
 
