@@ -25,6 +25,8 @@ codeunit 50100 "CLIP Course - Sales Management"
     local procedure CheckSalesForCourseEdition(var Rec: Record "Sales Line")
     var
         CourseEdition: Record "CLIP Course Edition";
+        // MaxStudentsExceededMsg: TextConst ENU = 'The current sale for course %1 edition %2 will exceed the maximum students %3 (%4)', ESP = 'La venta actual para el curso %1 edición %2 superará el número máximo de alumnos %3 (ventas previas: %4)';
+        MaxStudentsExceededMsg: Label 'The current sale for course %1 edition %2 will exceed the maximum students %3 (%4)', Comment = 'ESP="La venta actual para el curso %1 edición %2 superará el número máximo de alumnos %3 (ventas previas: %4)"';
     begin
         if Rec.Type <> Rec.Type::"CLIP Course" then
             exit;
@@ -35,10 +37,12 @@ codeunit 50100 "CLIP Course - Sales Management"
         CourseEdition.Get(Rec."No.", Rec."CLIP Course Edition");
         CourseEdition.CalcFields("Sales (Qty.)");
         if (CourseEdition."Sales (Qty.)" + Rec.Quantity) > CourseEdition."Max. Students" then
-            Message('La venta actual para el curso %1 edición %2 superará el número máximo de alumnos %3 (ventas previas: %4)',
-                        Rec."No.", Rec."CLIP Course Edition", CourseEdition."Max. Students", CourseEdition."Sales (Qty.)");
+            Message(MaxStudentsExceededMsg,
+                        Rec."No.",
+                        Rec."CLIP Course Edition",
+                        CourseEdition."Max. Students",
+                        CourseEdition."Sales (Qty.)");
     end;
-
 
     [EventSubscriber(ObjectType::Table, Database::"Sales Line", 'OnAfterAssignFieldsForNo', '', false, false)]
     local procedure SalesLine_OnAfterAssignFieldsForNo(var SalesLine: Record "Sales Line"; SalesHeader: Record "Sales Header")
