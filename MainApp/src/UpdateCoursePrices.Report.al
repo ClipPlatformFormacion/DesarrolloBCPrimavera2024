@@ -12,6 +12,22 @@ report 50100 "CLIP Update Course Prices"
             // RequestFilterFields = "No.", Price, "Duration (hours)";
             DataItemTableView = sorting("No.");
 
+            dataitem(CourseEdition; "CLIP Course Edition")
+            {
+                DataItemLinkReference = Course;
+                DataItemLink = "Course No." = field("No.");
+
+                trigger OnAfterGetRecord()
+                begin
+                    Counter += 1;
+                end;
+
+                trigger OnPostDataItem()
+                begin
+                    Message('OnPostDataItem Ediciones: %1', Counter);
+                end;
+            }
+
             trigger OnPreDataItem()
             begin
                 // Código previo a la ejecución del bucle
@@ -29,7 +45,7 @@ report 50100 "CLIP Update Course Prices"
             trigger OnPostDataItem()
             begin
                 // Código posterior a la ejecución del bucle                
-                Message('Iteraciones totales: %1', Counter);
+                Message('OnPostDataItem Cursos: %1', Counter);
             end;
         }
     }
@@ -52,7 +68,25 @@ report 50100 "CLIP Update Course Prices"
                 }
             }
         }
+
+        trigger OnOpenPage()
+        begin
+            Percentaje := 10;
+        end;
     }
+
+    trigger OnPreReport()
+    var
+        PercentajeCannotBeNegativeErr: Label 'The percentaje cannot be negative', comment = 'ESP="El porcentaje no puede ser negativo"';
+    begin
+        if Percentaje < 0 then
+            Error(PercentajeCannotBeNegativeErr);
+    end;
+
+    trigger OnPostReport()
+    begin
+        Message('OnPostReport %1', Counter);
+    end;
 
     var
         Counter: Integer;

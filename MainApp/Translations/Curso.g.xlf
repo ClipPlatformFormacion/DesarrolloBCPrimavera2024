@@ -418,6 +418,11 @@
           <note from="Developer" annotates="general" priority="2">ESP="Actualiza los precios de los cursos"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Report CLIP Update Course Prices - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 2335523760 - Method 1544076788 - NamedType 233268983" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The percentaje cannot be negative</source>
+          <note from="Developer" annotates="general" priority="2">ESP="El porcentaje no puede ser negativo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report CLIP Update Course Prices - Method OnPreReport - NamedType PercentajeCannotBeNegativeErr</note>
+        </trans-unit>
         <trans-unit id="Report 2335523760 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Options</source>
           <note from="Developer" annotates="general" priority="2">ESP="Opciones"</note>
