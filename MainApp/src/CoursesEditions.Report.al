@@ -18,11 +18,11 @@ report 50101 "CLIP Courses & Editions"
                 column(EditionMaxStudents; "Max. Students") { IncludeCaption = true; }
                 column(EditionStartDate; "Start Date") { IncludeCaption = true; }
                 column(EditionSalesQty; "Sales (Qty.)") { IncludeCaption = true; }
-                column(PrintDetails; PrintDetails) { }
             }
             column(CourseNo; "No.") { IncludeCaption = true; }
             column(CourseName; "Name") { IncludeCaption = true; }
             column(CourseDurationHours; "Duration (hours)") { IncludeCaption = true; }
+            column(PrintDetails; PrintDetails) { }
         }
     }
 

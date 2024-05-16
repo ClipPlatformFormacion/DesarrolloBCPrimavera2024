@@ -11,43 +11,6 @@
       <rd:DataSourceID>ec30ffb9-4760-431a-9d0b-52d45d3c607b</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="CourseNo">
-          <DataField>CourseNo</DataField>
-        </Field>
-        <Field Name="CourseName">
-          <DataField>CourseName</DataField>
-        </Field>
-        <Field Name="CourseDurationHours">
-          <DataField>CourseDurationHours</DataField>
-        </Field>
-        <Field Name="Edition">
-          <DataField>Edition</DataField>
-        </Field>
-        <Field Name="EditionMaxStudents">
-          <DataField>EditionMaxStudents</DataField>
-        </Field>
-        <Field Name="EditionStartDate">
-          <DataField>EditionStartDate</DataField>
-        </Field>
-        <Field Name="EditionSalesQty">
-          <DataField>EditionSalesQty</DataField>
-        </Field>
-        <Field Name="EditionSalesQtyFormat">
-          <DataField>EditionSalesQtyFormat</DataField>
-        </Field>
-        <Field Name="PrintDetails">
-          <DataField>PrintDetails</DataField>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -819,6 +782,9 @@
                             </TablixMember>
                             <TablixMember>
                               <Group Name="Details" />
+                              <Visibility>
+                                <Hidden>=NOT Fields!PrintDetails.Value</Hidden>
+                              </Visibility>
                             </TablixMember>
                             <TablixMember>
                               <KeepWithGroup>Before</KeepWithGroup>
@@ -1004,4 +970,41 @@ End Function
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="CourseNo">
+          <DataField>CourseNo</DataField>
+        </Field>
+        <Field Name="CourseName">
+          <DataField>CourseName</DataField>
+        </Field>
+        <Field Name="CourseDurationHours">
+          <DataField>CourseDurationHours</DataField>
+        </Field>
+        <Field Name="PrintDetails">
+          <DataField>PrintDetails</DataField>
+        </Field>
+        <Field Name="Edition">
+          <DataField>Edition</DataField>
+        </Field>
+        <Field Name="EditionMaxStudents">
+          <DataField>EditionMaxStudents</DataField>
+        </Field>
+        <Field Name="EditionStartDate">
+          <DataField>EditionStartDate</DataField>
+        </Field>
+        <Field Name="EditionSalesQty">
+          <DataField>EditionSalesQty</DataField>
+        </Field>
+        <Field Name="EditionSalesQtyFormat">
+          <DataField>EditionSalesQtyFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>
