@@ -19,10 +19,12 @@ report 50101 "CLIP Courses & Editions"
                 column(EditionStartDate; "Start Date") { IncludeCaption = true; }
                 column(EditionSalesQty; "Sales (Qty.)") { IncludeCaption = true; }
             }
+            column(PrintDetails; PrintDetails) { }
+            column(ReportCaption; ReportCaptionLbl) { }
+            column(COMPANYNAME; COMPANYPROPERTY.DisplayName()) { }
             column(CourseNo; "No.") { IncludeCaption = true; }
             column(CourseName; "Name") { IncludeCaption = true; }
             column(CourseDurationHours; "Duration (hours)") { IncludeCaption = true; }
-            column(PrintDetails; PrintDetails) { }
         }
     }
 
@@ -55,4 +57,5 @@ report 50101 "CLIP Courses & Editions"
     }
     var
         PrintDetails: boolean;
+        ReportCaptionLbl: Label 'Courses & Editions', comment = 'ESP="Cursos y Ediciones"';
 }
