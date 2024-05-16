@@ -199,11 +199,13 @@
                                                 <Color>LightGrey</Color>
                                                 <Style>None</Style>
                                               </Border>
+                                              <BackgroundColor>LimeGreen</BackgroundColor>
                                               <PaddingLeft>5pt</PaddingLeft>
                                               <PaddingRight>5pt</PaddingRight>
                                             </Style>
                                           </Textbox>
                                           <ColSpan>2</ColSpan>
+                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                       <TablixCell />
@@ -1830,7 +1832,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!ShipmentDate_Line_Lbl.Value</Value>
+                                                    <Value>=Parameters!CLIP_Course_EditionCaption.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -2184,7 +2186,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!ShipmentDate_Line_Lbl.Value</Value>
+                                                    <Value>=Parameters!CLIP_Course_EditionCaption.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -2519,7 +2521,7 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="Textbox66">
+                                          <Textbox Name="Textbox45">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
@@ -2537,7 +2539,7 @@
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox66</rd:DefaultName>
+                                            <rd:DefaultName>Textbox45</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Style>None</Style>
@@ -3066,18 +3068,17 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="ShipmentDate_Line">
+                                          <Textbox Name="CLIP_Course_Edition">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!ShipmentDate_Line.Value</Value>
+                                                    <Value>=Fields!CLIP_Course_Edition.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
-                                                      <Format>dd-MM-yy</Format>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
@@ -3086,7 +3087,7 @@
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>ShipmentDate_Line</rd:DefaultName>
+                                            <rd:DefaultName>CLIP_Course_Edition</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -4535,7 +4536,7 @@
                                 </Filter>
                               </Filters>
                               <Top>16.07798cm</Top>
-                              <Height>1.55224cm</Height>
+                              <Height>1.16418cm</Height>
                               <Width>18.39999cm</Width>
                               <ZIndex>2</ZIndex>
                               <Visibility>
@@ -7506,7 +7507,7 @@
                               <Top>10.04033cm</Top>
                               <Left>0.07874cm</Left>
                               <Height>1.4636cm</Height>
-                              <Width>10cm</Width>
+                              <Width>3.3782cm</Width>
                               <ZIndex>8</ZIndex>
                               <Style>
                                 <Border>
@@ -7640,7 +7641,6 @@
                             </Border>
                           </Style>
                         </Rectangle>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -7899,6 +7899,30 @@
       </Page>
     </ReportSection>
   </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="CLIP_Course_EditionCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CLIP_Course_EditionCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CLIP_Course_EditionCaption</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>1</NumberOfColumns>
+      <NumberOfRows>1</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>CLIP_Course_EditionCaption</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -8834,6 +8858,9 @@ End Function
         </Field>
         <Field Name="CurrencySymbol">
           <DataField>CurrencySymbol</DataField>
+        </Field>
+        <Field Name="CLIP_Course_Edition">
+          <DataField>CLIP_Course_Edition</DataField>
         </Field>
       </Fields>
       <Query>
