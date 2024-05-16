@@ -2,9 +2,7 @@ xmlport 50101 "CLIP Import Courses"
 {
     Caption = 'Import Courses', comment = 'ESP="Importación de Cursos"';
     Direction = Export;
-    Format = VariableText;
-    FieldDelimiter = '"';
-    FieldSeparator = ';';
+    Format = FixedText;
 
     schema
     {
@@ -15,12 +13,12 @@ xmlport 50101 "CLIP Import Courses"
                 // AutoUpdate = true;
                 // AutoReplace = true;
                 // UseTemporary = true;
-                fieldelement(No; Course."No.") { }
-                fieldelement(Name; Course."Name") { }
-                fieldelement(Duration; Course."Duration (hours)") { }
-                fieldelement(GenProdPostingGroup; Course."Gen. Prod. Posting Group") { }
-                fieldelement(VATProdPostingGroup; Course."VAT Prod. Posting Group") { }
-                textelement(ContentDescription) { }
+                fieldelement(No; Course."No.") { Width = 20; }
+                fieldelement(Name; Course."Name") { Width = 50; }
+                fieldelement(Duration; Course."Duration (hours)") { Width = 10; }
+                fieldelement(GenProdPostingGroup; Course."Gen. Prod. Posting Group") { Width = 20; }
+                fieldelement(VATProdPostingGroup; Course."VAT Prod. Posting Group") { Width = 20; }
+                textelement(ContentDescription) { Width = 250; }
 
                 trigger OnBeforeInsertRecord()
                 var
