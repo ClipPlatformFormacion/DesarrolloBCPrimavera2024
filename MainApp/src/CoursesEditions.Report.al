@@ -3,7 +3,7 @@ report 50101 "CLIP Courses & Editions"
     Caption = 'Courses & Editions', comment = 'ESP="Cursos y Ediciones"';
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
-    DefaultRenderingLayout = LayoutRDLC;
+    DefaultRenderingLayout = LayoutExcel;
 
     dataset
     {
@@ -53,6 +53,11 @@ report 50101 "CLIP Courses & Editions"
         {
             Type = RDLC;
             LayoutFile = 'src/CoursesEdition.rdl';
+        }
+        layout(LayoutExcel)
+        {
+            Type = Excel;
+            LayoutFile = 'src/CoursesEdition.xlsx';
         }
     }
     var
