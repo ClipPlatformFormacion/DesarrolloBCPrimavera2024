@@ -1,7 +1,10 @@
 xmlport 50101 "CLIP Import Courses"
 {
     Caption = 'Import Courses', comment = 'ESP="Importación de Cursos"';
-    Direction = Import;
+    Direction = Export;
+    Format = VariableText;
+    FieldDelimiter = '"';
+    FieldSeparator = ';';
 
     schema
     {
@@ -11,7 +14,7 @@ xmlport 50101 "CLIP Import Courses"
             {
                 // AutoUpdate = true;
                 // AutoReplace = true;
-                UseTemporary = true;
+                // UseTemporary = true;
                 fieldelement(No; Course."No.") { }
                 fieldelement(Name; Course."Name") { }
                 fieldelement(Duration; Course."Duration (hours)") { }
