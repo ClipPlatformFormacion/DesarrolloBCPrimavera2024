@@ -25,6 +25,19 @@ page 50100 "CLIP Course List"
     }
     actions
     {
+        area(Processing)
+        {
+            action(ImportCourses)
+            {
+                ApplicationArea = All;
+                Caption = 'Import Courses', Comment = 'ESP="Importación de Cursos"';
+                Image = Import;
+                RunObject = XmlPort "CLIP Import Courses";
+                ToolTip = 'Import courses from an XML file.';
+                Promoted = true;
+                PromotedOnly = true;
+            }
+        }
         area(Navigation)
         {
             action(CourseEditions)

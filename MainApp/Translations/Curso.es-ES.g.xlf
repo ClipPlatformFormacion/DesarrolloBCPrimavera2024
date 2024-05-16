@@ -432,6 +432,17 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page CLIP Course List - Action Ledger E&amp;ntries - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 2667201611 - Action 4252305525 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import courses from an XML file.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CLIP Course List - Action ImportCourses - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2667201611 - Action 4252305525 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Courses</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Importación de Cursos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CLIP Course List - Action ImportCourses - Property Caption</note>
+          <target>Importación de Cursos</target>
+        </trans-unit>
         <trans-unit id="Page 1177735025 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Courses Setup</source>
           <note from="Developer" annotates="general" priority="2">ESP="Conf. cursos"</note>
@@ -508,6 +519,12 @@
           <note from="Developer" annotates="general" priority="2">ESP="Exportación de Pedidos de Venta"</note>
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort CLIP Export Sales Orders - Property Caption</note>
           <target>Exportación de Pedidos de Venta</target>
+        </trans-unit>
+        <trans-unit id="XmlPort 3032682183 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Courses</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Importación de Cursos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort CLIP Import Courses - Property Caption</note>
+          <target>Importación de Cursos</target>
         </trans-unit>
         <trans-unit id="PageExtension 1573979678 - Action 1585226249 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3332899200">
           <source>Export Sales Orders</source>
