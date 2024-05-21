@@ -460,6 +460,18 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page CLIP Courses Setup - Control Course Nos. - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 3602465664 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Query</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Query"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CLIP Query - Property Caption</note>
+          <target>Query</target>
+        </trans-unit>
+        <trans-unit id="Page 3602465664 - Action 1916069359 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Execute Query</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ejecutar query"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CLIP Query - Action ExecuteQuery - Property Caption</note>
+          <target>Ejecutar query</target>
+        </trans-unit>
         <trans-unit id="Report 3019079251 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Courses &amp; Editions</source>
           <note from="Developer" annotates="general" priority="2">ESP="Cursos y Ediciones"</note>
@@ -543,12 +555,6 @@
           <note from="Developer" annotates="general" priority="2">ESP="Nivel"</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension CLIP Customer - Field CLIP Level - Property Caption</note>
           <target>Nivel</target>
-        </trans-unit>
-        <trans-unit id="TableExtension 2281297054 - Field 3097489956 - Method 2126772001 - NamedType 2411813205" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 2281297054">
-          <source>Unknown Level %1</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Nivel desconocido %1"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CLIP Customer - Field CLIP Level - Method OnValidate - NamedType UnknownLevelErr</note>
-          <target>Nivel desconocido %1</target>
         </trans-unit>
         <trans-unit id="TableExtension 399710922 - Field 346014409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1173465396">
           <source>Course Edition</source>

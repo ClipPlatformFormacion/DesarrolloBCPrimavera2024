@@ -423,6 +423,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page CLIP Courses Setup - Control Course Nos. - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 3602465664 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Query</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Query"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CLIP Query - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3602465664 - Action 1916069359 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Execute Query</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ejecutar query"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CLIP Query - Action ExecuteQuery - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3602465664 - Action 2022745915 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use Query</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Usar query"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CLIP Query - Action UseQuery - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Report 3019079251 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Courses &amp; Editions</source>
           <note from="Developer" annotates="general" priority="2">ESP="Cursos y Ediciones"</note>
