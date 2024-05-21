@@ -3,65 +3,105 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="Curso">
     <body>
       <group id="body">
-        <trans-unit id="Table 2553370741 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 3534050887 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Course</source>
           <note from="Developer" annotates="general" priority="2">ESP="Curso"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table CLIP Course - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2553370741 - Field 81686673 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 3534050887 - Field 81686673 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Content Description</source>
           <note from="Developer" annotates="general" priority="2">ESP="Temario"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table CLIP Course - Field Content Description - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course - Field Content Description - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2553370741 - Field 1545276864 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 3534050887 - Field 1545276864 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Duration (hours)</source>
           <note from="Developer" annotates="general" priority="2">ESP="Duración (horas)"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table CLIP Course - Field Duration (hours) - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course - Field Duration (hours) - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2553370741 - Field 2139693550 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 3534050887 - Field 2139693550 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Gen. Prod. Posting Group</source>
           <note from="Developer" annotates="general" priority="2">ESP="Grupo contable prod. gen."</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table CLIP Course - Field Gen. Prod. Posting Group - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course - Field Gen. Prod. Posting Group - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2553370741 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 3534050887 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Name</source>
           <note from="Developer" annotates="general" priority="2">ESP="Nombre"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table CLIP Course - Field Name - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course - Field Name - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2553370741 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 3534050887 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>No.</source>
           <note from="Developer" annotates="general" priority="2">ESP="Nº"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table CLIP Course - Field No. - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course - Field No. - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2553370741 - Field 1351594800 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 3534050887 - Field 1351594800 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>No. Series</source>
           <note from="Developer" annotates="general" priority="2">ESP="Nº serie"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table CLIP Course - Field No. Series - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course - Field No. Series - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2553370741 - Field 3635338911 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 3534050887 - Field 3635338911 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Price</source>
           <note from="Developer" annotates="general" priority="2">ESP="Precio"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table CLIP Course - Field Price - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course - Field Price - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2553370741 - Field 4167374654 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 3534050887 - Field 4167374654 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Type (Enum)</source>
           <note from="Developer" annotates="general" priority="2">ESP="Tipo (Enum)"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table CLIP Course - Field Type (Enum) - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course - Field Type (Enum) - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2553370741 - Field 63134078 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 3534050887 - Field 63134078 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Type (Option)</source>
           <note from="Developer" annotates="general" priority="2">ESP="Tipo (Option)"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table CLIP Course - Field Type (Option) - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course - Field Type (Option) - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2553370741 - Field 63134078 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 3534050887 - Field 63134078 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
           <source> ,Instructor-Lead,Video Tutorial</source>
           <note from="Developer" annotates="general" priority="2">ESP=" ,Guiado por profesor,Vídeo tutorial"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table CLIP Course - Field Type (Option) - Property OptionCaption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course - Field Type (Option) - Property OptionCaption</note>
         </trans-unit>
-        <trans-unit id="Table 2553370741 - Field 236064653 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 3534050887 - Field 236064653 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>VAT Prod. Posting Group</source>
           <note from="Developer" annotates="general" priority="2">ESP="Grupo contable IVA prod."</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table CLIP Course - Field VAT Prod. Posting Group - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course - Field VAT Prod. Posting Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2189160554 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Resources Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Resources Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2189160554 - Control 1532816877 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Numbering</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Resources Setup - Control Numbering - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2189160554 - Control 2295493946 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number series code you can use to assign numbers to resources.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Resources Setup - Control Resource Nos. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2189160554 - Control 1149200971 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether time sheets must be approved on a per job basis by the user specified for the job.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Resources Setup - Control Time Sheet by Job Approval - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2189160554 - Control 3096448396 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the first weekday to use on a time sheet. The default is Monday.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Resources Setup - Control Time Sheet First Weekday - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2189160554 - Control 2677746018 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number series code you can use to assign document numbers to time sheets.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Resources Setup - Control Time Sheet Nos. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2189160554 - Control 487830357 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if a new time sheet experience should be used.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Resources Setup - Control Use New Time Sheet Experience - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2189160554 - Field 1296262074 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>MyField</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Resources Setup - Field MyField - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 346014409 - Field 1667959142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Course No.</source>
@@ -508,35 +548,35 @@
           <note from="Developer" annotates="general" priority="2">ESP="Nivel"</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension CLIP Customer - Field CLIP Level - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 399710922 - Field 346014409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1173465396">
+        <trans-unit id="TableExtension 4173864941 - Field 346014409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1173465396">
           <source>Course Edition</source>
           <note from="Developer" annotates="general" priority="2">ESP="Edición curso"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CLIP Return Receipt Line - Field CLIP Course Edition - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension nullReturn Receipt Line - Field CLIP Course Edition - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 3457006183 - Field 346014409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3059602325">
+        <trans-unit id="TableExtension 715144020 - Field 346014409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3059602325">
           <source>Course Edition</source>
           <note from="Developer" annotates="general" priority="2">ESP="Edición curso"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CLIP Sales Cr.Memo Line - Field CLIP Course Edition - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension nullSales Cr.Memo Line - Field CLIP Course Edition - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 4004720939 - Field 346014409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2079186865">
+        <trans-unit id="TableExtension 2882931280 - Field 346014409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2079186865">
           <source>Course Edition</source>
           <note from="Developer" annotates="general" priority="2">ESP="Edición curso"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CLIP Sales Invoice Line - Field CLIP Course Edition - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension nullSales Invoice Line - Field CLIP Course Edition - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 3335146236 - Field 346014409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
+        <trans-unit id="TableExtension 3395789919 - Field 346014409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
           <source>Course Edition</source>
           <note from="Developer" annotates="general" priority="2">ESP="Edición curso"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CLIP Sales Line - Field CLIP Course Edition - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension nullSales Line - Field CLIP Course Edition - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 569650334 - Field 346014409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+        <trans-unit id="TableExtension 3217575345 - Field 346014409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
           <source>Course Edition</source>
           <note from="Developer" annotates="general" priority="2">ESP="Edición curso"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CLIP Sales Line Archive - Field CLIP Course Edition - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension nullSales Line Archive - Field CLIP Course Edition - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2857866236 - Field 346014409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1114148978">
+        <trans-unit id="TableExtension 1769480967 - Field 346014409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1114148978">
           <source>Course Edition</source>
           <note from="Developer" annotates="general" priority="2">ESP="Edición curso"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension CLIP Sales Shipment Line - Field CLIP Course Edition - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension nullSales Shipment Line - Field CLIP Course Edition - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 75238701 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source> </source>
