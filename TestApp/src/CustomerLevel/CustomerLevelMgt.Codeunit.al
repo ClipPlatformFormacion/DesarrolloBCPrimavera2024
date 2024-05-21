@@ -1,12 +1,7 @@
-codeunit 50154 "CLIP Customer Level Mgt."
+codeunit 50154 "CLIP Customer Level Mgt." implements "CLIP Customer Level"
 {
-    [EventSubscriber(ObjectType::Table, Database::Customer, "CLIP OnValidateCustomerLevelOnBeforeUnknownLevelError", '', false, false)]
-    local procedure "Customer_CLIP OnValidateCustomerLevelOnBeforeUnknownLevelError"(var Customer: Record Customer; var Handled: Boolean)
+    procedure GetDiscount(): Decimal
     begin
-        if Customer."CLIP Level" <> customer."CLIP Level"::"CLIP Gold" then
-            exit;
-
-        Customer."CLIP Discount" := 20;
-        Handled := true;
+        exit(20);
     end;
 }
