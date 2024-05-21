@@ -1,6 +1,6 @@
 codeunit 50153 "CLIP Library - Course"
 {
-    procedure CreateCourse() Course: Record "CLIP Course"
+    procedure CreateCourse() Course: Record "Course"
     var
         GeneralPostingSetup: Record "General Posting Setup";
         VATPostingSetup: Record "VAT Posting Setup";

@@ -1,4 +1,10 @@
-table 50100 "CLIP Course"
+namespace ClipPlatform.Course;
+
+using Microsoft.Foundation.NoSeries;
+using Microsoft.Finance.GeneralLedger.Setup;
+using Microsoft.Finance.VAT.Setup;
+
+table 50100 "Course"
 {
     Caption = 'Course', comment = 'ESP="Curso"';
     LookupPageId = "CLIP Course List";
@@ -115,9 +121,9 @@ table 50100 "CLIP Course"
         end;
     end;
 
-    procedure AssistEdit(OldRes: Record "CLIP Course") Result: Boolean
+    procedure AssistEdit(OldRes: Record "Course") Result: Boolean
     var
-        Res: Record "CLIP Course";
+        Res: Record "Course";
         ResSetup: Record "CLIP Courses Setup";
         NoSeriesMgt: Codeunit NoSeriesManagement;
         IsHandled: Boolean;
@@ -140,17 +146,17 @@ table 50100 "CLIP Course"
     end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnBeforeValidateNo(var Course: Record "CLIP Course"; xCourse: Record "CLIP Course"; var IsHandled: Boolean)
+    local procedure OnBeforeValidateNo(var Course: Record "Course"; xCourse: Record "Course"; var IsHandled: Boolean)
     begin
     end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnBeforeOnInsert(var Course: Record "CLIP Course"; var IsHandled: Boolean; var xCourse: Record "CLIP Course")
+    local procedure OnBeforeOnInsert(var Course: Record "Course"; var IsHandled: Boolean; var xCourse: Record "Course")
     begin
     end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnBeforeAssistEdit(var Course: Record "CLIP Course"; xOldCourse: Record "CLIP Course"; var IsHandled: Boolean; var Result: Boolean)
+    local procedure OnBeforeAssistEdit(var Course: Record "Course"; xOldCourse: Record "Course"; var IsHandled: Boolean; var Result: Boolean)
     begin
     end;
 }

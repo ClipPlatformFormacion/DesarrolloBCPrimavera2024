@@ -1,10 +1,10 @@
-tableextension 50100 "CLIP Sales Line" extends "Sales Line"
+tableextension 50102 "nullSales Shipment Line" extends "Sales Shipment Line"
 {
     fields
     {
         modify("No.")
         {
-            TableRelation = if (Type = const("CLIP Course")) "CLIP Course";
+            TableRelation = if (Type = const("CLIP Course")) "Course";
         }
         field(50100; "CLIP Course Edition"; Code[20])
         {

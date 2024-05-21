@@ -54,7 +54,7 @@ codeunit 50100 "CLIP Course - Sales Management"
 
     local procedure CopyFromCourse(var SalesLine: Record "Sales Line"; SalesHeader: Record "Sales Header")
     var
-        Course: Record "CLIP Course";
+        Course: Record "Course";
     begin
         Course.Get(SalesLine."No.");
 
@@ -69,7 +69,7 @@ codeunit 50100 "CLIP Course - Sales Management"
     end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnAfterAssignCourseValues(var SalesLine: Record "Sales Line"; Course: Record "CLIP Course"; SalesHeader: Record "Sales Header")
+    local procedure OnAfterAssignCourseValues(var SalesLine: Record "Sales Line"; Course: Record "Course"; SalesHeader: Record "Sales Header")
     begin
     end;
 

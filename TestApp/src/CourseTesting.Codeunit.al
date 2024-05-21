@@ -6,7 +6,7 @@ codeunit 50152 "CLIP Course Testing"
     [Test]
     procedure SelectingACourseOnASalesLine()
     var
-        Course: Record "CLIP Course";
+        Course: Record "Course";
         SalesHeader: Record "Sales Header";
         SalesLine: Record "Sales Line";
         LibraryCourse: Codeunit "CLIP Library - Course";
@@ -37,7 +37,7 @@ codeunit 50152 "CLIP Course Testing"
     [Test]
     procedure CourseSalesPosting_EditionInPostedDocuments()
     var
-        Course: Record "CLIP Course";
+        Course: Record "Course";
         CourseEdition: Record "CLIP Course Edition";
         SalesHeader: Record "Sales Header";
         SalesLine: Record "Sales Line";
@@ -74,7 +74,7 @@ codeunit 50152 "CLIP Course Testing"
     [Test]
     procedure CourseSalesPosting_CourseLedgerEntry()
     var
-        Course: Record "CLIP Course";
+        Course: Record "Course";
         CourseEdition: Record "CLIP Course Edition";
         SalesHeader: Record "Sales Header";
         SalesLine: Record "Sales Line";
@@ -123,7 +123,7 @@ codeunit 50152 "CLIP Course Testing"
     [Test]
     procedure CourseSalesPostingCreditMemo_CourseLedgerEntry()
     var
-        Course: Record "CLIP Course";
+        Course: Record "Course";
         CourseEdition: Record "CLIP Course Edition";
         SalesHeader: Record "Sales Header";
         SalesLine: Record "Sales Line";

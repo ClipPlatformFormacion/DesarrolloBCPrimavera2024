@@ -1,10 +1,10 @@
-tableextension 50104 "CLIP Return Receipt Line" extends "Return Receipt Line"
+tableextension 50105 "nullSales Line Archive" extends "Sales Line Archive"
 {
     fields
     {
         modify("No.")
         {
-            TableRelation = if (Type = const("CLIP Course")) "CLIP Course";
+            TableRelation = if (Type = const("CLIP Course")) "Course";
         }
         field(50100; "CLIP Course Edition"; Code[20])
         {

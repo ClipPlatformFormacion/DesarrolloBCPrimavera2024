@@ -6,7 +6,7 @@ table 50102 "CLIP Course Edition"
         field(1; "Course No."; Code[20])
         {
             Caption = 'Course No.', Comment = 'ESP="Nº curso"';
-            TableRelation = "CLIP Course";
+            TableRelation = "Course";
         }
         field(2; Edition; Code[20])
         {

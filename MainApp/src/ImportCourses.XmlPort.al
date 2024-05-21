@@ -8,7 +8,7 @@ xmlport 50101 "CLIP Import Courses"
     {
         textelement(Root)
         {
-            tableelement(Course; "CLIP Course")
+            tableelement(Course; "Course")
             {
                 // AutoUpdate = true;
                 // AutoReplace = true;
@@ -22,7 +22,7 @@ xmlport 50101 "CLIP Import Courses"
 
                 trigger OnBeforeInsertRecord()
                 var
-                    RealCourse: Record "CLIP Course";
+                    RealCourse: Record "Course";
                 begin
                     Course.Price := Course."Duration (hours)" * 100;
                     Course."Content Description" := 'TEMARIO DEL XMLPORT: ' + ContentDescription;

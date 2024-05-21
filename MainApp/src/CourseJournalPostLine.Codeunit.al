@@ -13,7 +13,7 @@ codeunit 50101 "CLIP Course Journal-Post Line"
         GeneralLedgerSetup: Record "General Ledger Setup";
         ResJournalLineGlobal: Record "CLIP Course Journal Line";
         CourseLedgerEntry: Record "CLIP Course Ledger Entry";
-        Course: Record "CLIP Course";
+        Course: Record "Course";
         // ResJnlCheckLine: Codeunit "Res. Jnl.-Check Line";
         NextEntryNo: Integer;
         GLSetupRead: Boolean;

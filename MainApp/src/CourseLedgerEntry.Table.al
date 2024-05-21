@@ -26,7 +26,7 @@ table 50103 "CLIP Course Ledger Entry"
         field(5; "Course No."; Code[20])
         {
             Caption = 'Course No.';
-            TableRelation = "CLIP Course";
+            TableRelation = "Course";
         }
         field(6; "Course Edition"; Code[20])
         {

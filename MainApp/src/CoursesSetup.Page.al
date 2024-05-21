@@ -1,6 +1,6 @@
 page 50102 "CLIP Courses Setup"
 {
-    AccessByPermission = TableData "CLIP Course" = R;
+    AccessByPermission = TableData "Course" = R;
     ApplicationArea = Jobs;
     Caption = 'Courses Setup', Comment = 'ESP="Conf. cursos"';
     DeleteAllowed = false;

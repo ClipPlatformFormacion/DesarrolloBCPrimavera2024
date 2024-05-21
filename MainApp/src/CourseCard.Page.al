@@ -4,7 +4,7 @@ page 50101 "CLIP Course Card"
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = None;
-    SourceTable = "CLIP Course";
+    SourceTable = "Course";
 
     layout
     {

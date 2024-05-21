@@ -7,7 +7,7 @@ report 50101 "CLIP Courses & Editions"
 
     dataset
     {
-        dataitem(Course; "CLIP Course")
+        dataitem(Course; "Course")
         {
             dataitem(CourseEdition; "CLIP Course Edition")
             {

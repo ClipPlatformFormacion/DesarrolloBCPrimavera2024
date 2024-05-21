@@ -5,7 +5,7 @@ enum 50101 "CLIP Customer Level" implements "CLIP Customer Level"
     value(0; " ")
     {
         Caption = ' ', comment = 'ESP=" "';
-        Implementation = "CLIP Customer Level" = "CLIP Blank Customer Level";
+        Implementation = "CLIP Customer Level" = "Blank Customer Level";
     }
     value(1; "Bronze")
     {

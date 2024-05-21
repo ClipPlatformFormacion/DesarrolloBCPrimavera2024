@@ -4,7 +4,7 @@ page 50100 "CLIP Course List"
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = "CLIP Course";
+    SourceTable = "Course";
     CardPageId = "CLIP Course Card";
     Editable = false;
 

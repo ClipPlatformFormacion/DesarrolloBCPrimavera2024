@@ -35,7 +35,7 @@ table 50104 "CLIP Course Journal Line"
         field(6; "Course No."; Code[20])
         {
             Caption = 'Course No.';
-            TableRelation = "CLIP Course";
+            TableRelation = "Course";
 
             trigger OnValidate()
             begin
@@ -206,7 +206,7 @@ table 50104 "CLIP Course Journal Line"
         // ResJnlTemplate: Record "Course Journal Template";
         // ResJnlBatch: Record "Course Journal Batch";
         // CourseJournalLine: Record "CLIP Course Journal Line";
-        Course: Record "CLIP Course";
+        Course: Record "Course";
         GLSetup: Record "General Ledger Setup";
         // NoSeriesMgt: Codeunit NoSeriesManagement;
         // DimMgt: Codeunit DimensionManagement;

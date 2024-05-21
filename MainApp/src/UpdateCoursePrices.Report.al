@@ -7,7 +7,7 @@ report 50100 "CLIP Update Course Prices"
 
     dataset
     {
-        dataitem(Course; "CLIP Course")
+        dataitem(Course; "Course")
         {
             // RequestFilterFields = "No.", Price, "Duration (hours)";
             DataItemTableView = sorting("No.");
