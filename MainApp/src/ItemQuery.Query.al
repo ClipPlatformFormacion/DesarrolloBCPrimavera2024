@@ -1,4 +1,4 @@
-query 50100 "CLIP Item Query"
+query 50100 "Item Query"
 {
     QueryType = Normal;
     OrderBy = descending(Name);

@@ -1,9 +1,9 @@
-codeunit 50100 "CLIP Course - Sales Management"
+codeunit 50100 "Course - Sales Management"
 {
     [EventSubscriber(ObjectType::Table, Database::"Option Lookup Buffer", OnBeforeIncludeOption, '', false, false)]
     local procedure OptionLookupBuffer_OnBeforeIncludeOption(OptionLookupBuffer: Record "Option Lookup Buffer" temporary; LookupType: Option; Option: Integer; var Handled: Boolean; var Result: Boolean; RecRef: RecordRef)
     begin
-        if Option <> "Sales Line Type"::"CLIP Course".AsInteger() then
+        if Option <> "Sales Line Type"::"Course".AsInteger() then
             exit;
 
         Handled := true;
@@ -16,7 +16,7 @@ codeunit 50100 "CLIP Course - Sales Management"
         CheckSalesForCourseEdition(Rec);
     end;
 
-    [EventSubscriber(ObjectType::Table, Database::"Sales Line", OnAfterValidateEvent, "CLIP Course Edition", false, false)]
+    [EventSubscriber(ObjectType::Table, Database::"Sales Line", OnAfterValidateEvent, "Course Edition", false, false)]
     local procedure OnAfterValidate_CourseEdition_CheckSalesForCourseEdition(var Rec: Record "Sales Line")
     begin
         CheckSalesForCourseEdition(Rec);
@@ -24,22 +24,22 @@ codeunit 50100 "CLIP Course - Sales Management"
 
     local procedure CheckSalesForCourseEdition(var Rec: Record "Sales Line")
     var
-        CourseEdition: Record "CLIP Course Edition";
+        CourseEdition: Record "Course Edition";
         // MaxStudentsExceededMsg: TextConst ENU = 'The current sale for course %1 edition %2 will exceed the maximum students %3 (%4)', ESP = 'La venta actual para el curso %1 edición %2 superará el número máximo de alumnos %3 (ventas previas: %4)';
         MaxStudentsExceededMsg: Label 'The current sale for course %1 edition %2 will exceed the maximum students %3 (%4)', Comment = 'ESP="La venta actual para el curso %1 edición %2 superará el número máximo de alumnos %3 (ventas previas: %4)"';
     begin
-        if Rec.Type <> Rec.Type::"CLIP Course" then
+        if Rec.Type <> Rec.Type::"Course" then
             exit;
-        if Rec."CLIP Course Edition" = '' then
+        if Rec."Course Edition" = '' then
             exit;
 
         CourseEdition.SetLoadFields("Max. Students", "Sales (Qty.)");
-        CourseEdition.Get(Rec."No.", Rec."CLIP Course Edition");
+        CourseEdition.Get(Rec."No.", Rec."Course Edition");
         CourseEdition.CalcFields("Sales (Qty.)");
         if (CourseEdition."Sales (Qty.)" + Rec.Quantity) > CourseEdition."Max. Students" then
             Message(MaxStudentsExceededMsg,
                         Rec."No.",
-                        Rec."CLIP Course Edition",
+                        Rec."Course Edition",
                         CourseEdition."Max. Students",
                         CourseEdition."Sales (Qty.)");
     end;
@@ -47,7 +47,7 @@ codeunit 50100 "CLIP Course - Sales Management"
     [EventSubscriber(ObjectType::Table, Database::"Sales Line", 'OnAfterAssignFieldsForNo', '', false, false)]
     local procedure SalesLine_OnAfterAssignFieldsForNo(var SalesLine: Record "Sales Line"; SalesHeader: Record "Sales Header")
     begin
-        if SalesLine.Type <> SalesLine.Type::"CLIP Course" then
+        if SalesLine.Type <> SalesLine.Type::"Course" then
             exit;
         CopyFromCourse(SalesLine, SalesHeader);
     end;
@@ -76,15 +76,15 @@ codeunit 50100 "CLIP Course - Sales Management"
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales-Post", OnPostSalesLineOnBeforePostSalesLine, '', false, false)]
     local procedure "Sales-Post_OnPostSalesLineOnBeforePostSalesLine"(SalesHeader: Record "Sales Header"; var SalesLine: Record "Sales Line"; GenJnlLineDocNo: Code[20]; GenJnlLineExtDocNo: Code[35]; GenJnlLineDocType: Enum "Gen. Journal Document Type"; SrcCode: Code[10]; var GenJnlPostLine: Codeunit "Gen. Jnl.-Post Line"; var IsHandled: Boolean; SalesLineACY: Record "Sales Line")
     begin
-        if SalesLine.Type <> SalesLine.Type::"CLIP Course" then
+        if SalesLine.Type <> SalesLine.Type::"Course" then
             exit;
         PostCourseJournalLine(SalesHeader, SalesLine, GenJnlLineDocNo, GenJnlLineExtDocNo);
     end;
 
     local procedure PostCourseJournalLine(var SalesHeader: Record "Sales Header"; var SalesLine: Record "Sales Line"; GenJnlLineDocNo: Code[20]; GenJnlLineExtDocNo: Code[35])
     var
-        CourseJournalLine: Record "CLIP Course Journal Line";
-        CourseJournalPostLine: Codeunit "CLIP Course Journal-Post Line";
+        CourseJournalLine: Record "Course Journal Line";
+        CourseJournalPostLine: Codeunit "Course Journal-Post Line";
         ShouldExit: Boolean;
     begin
         ShouldExit := SalesLine."Qty. to Invoice" = 0;

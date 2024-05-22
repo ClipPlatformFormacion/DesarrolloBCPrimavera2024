@@ -1,4 +1,4 @@
-codeunit 50151 "CLIP GetMin"
+codeunit 50151 "GetMin"
 {
     procedure GetMin(p1: Integer; p2: Integer): Integer
     begin

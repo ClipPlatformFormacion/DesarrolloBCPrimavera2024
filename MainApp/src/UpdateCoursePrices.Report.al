@@ -1,4 +1,4 @@
-report 50100 "CLIP Update Course Prices"
+report 50100 "Update Course Prices"
 {
     Caption = 'Update Course Prices', Comment = 'ESP="Actualiza los precios de los cursos"';
     UsageCategory = ReportsAndAnalysis;
@@ -10,9 +10,11 @@ report 50100 "CLIP Update Course Prices"
         dataitem(Course; "Course")
         {
             // RequestFilterFields = "No.", Price, "Duration (hours)";
+#pragma warning disable AL0254
             DataItemTableView = sorting("No.");
+#pragma warning restore AL0254
 
-            dataitem(CourseEdition; "CLIP Course Edition")
+            dataitem(CourseEdition; "Course Edition")
             {
                 DataItemLinkReference = Course;
                 DataItemLink = "Course No." = field("No.");

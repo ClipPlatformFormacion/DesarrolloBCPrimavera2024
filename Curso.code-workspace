@@ -10,6 +10,6 @@
 		}
 	],
 	"settings": {
-		"alVarHelper.ignoreALPrefix": "CLIP"
+		"al.showHomeAtStartup": "Always"
 	}
 }

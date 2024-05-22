@@ -1,4 +1,4 @@
-table 50102 "CLIP Course Edition"
+table 50102 "Course Edition"
 {
     DataClassification = CustomerContent;
     fields
@@ -25,7 +25,7 @@ table 50102 "CLIP Course Edition"
         {
             Caption = 'Sales (Qty.)', comment = 'ESP="Ventas (cdad.)"';
             FieldClass = FlowField;
-            CalcFormula = sum("CLIP Course Ledger Entry".Quantity
+            CalcFormula = sum("Course Ledger Entry".Quantity
                             where("Course No." = field("Course No."),
                                   "Course Edition" = field(Edition),
                                   "Posting Date" = field("Date Filter")

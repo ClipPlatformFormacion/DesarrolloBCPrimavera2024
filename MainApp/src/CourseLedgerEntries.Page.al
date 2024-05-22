@@ -1,11 +1,11 @@
-page 50104 "CLIP Course Ledger Entries"
+page 50104 "Course Ledger Entries"
 {
     ApplicationArea = All;
     Caption = 'Course Ledger Entries', Comment = 'ESP="Movs. cursos"';
     DataCaptionFields = "Course No.";
     Editable = false;
     PageType = List;
-    SourceTable = "CLIP Course Ledger Entry";
+    SourceTable = "Course Ledger Entry";
     SourceTableView = sorting("Course No.", "Posting Date")
                       order(Descending);
     UsageCategory = History;

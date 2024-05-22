@@ -1,4 +1,4 @@
-report 50101 "CLIP Courses & Editions"
+report 50101 "Courses & Editions"
 {
     Caption = 'Courses & Editions', comment = 'ESP="Cursos y Ediciones"';
     UsageCategory = ReportsAndAnalysis;
@@ -9,7 +9,7 @@ report 50101 "CLIP Courses & Editions"
     {
         dataitem(Course; "Course")
         {
-            dataitem(CourseEdition; "CLIP Course Edition")
+            dataitem(CourseEdition; "Course Edition")
             {
                 DataItemLinkReference = Course;
                 DataItemLink = "Course No." = field("No.");

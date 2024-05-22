@@ -1,4 +1,4 @@
-interface "CLIP Customer Level"
+interface "Customer Level"
 {
     procedure GetDiscount(): Decimal;
 }

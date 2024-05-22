@@ -1,8 +1,8 @@
-table 50103 "CLIP Course Ledger Entry"
+table 50103 "Course Ledger Entry"
 {
     Caption = 'Course Ledger Entry', Comment = 'ESP="Mov. curso"';
-    DrillDownPageID = "CLIP Course Ledger Entries";
-    LookupPageID = "CLIP Course Ledger Entries";
+    DrillDownPageID = "Course Ledger Entries";
+    LookupPageID = "Course Ledger Entries";
     DataClassification = CustomerContent;
 
     fields
@@ -31,7 +31,7 @@ table 50103 "CLIP Course Ledger Entry"
         field(6; "Course Edition"; Code[20])
         {
             Caption = 'Edition', comment = 'ESP="Edición"';
-            TableRelation = "CLIP Course Edition";
+            TableRelation = "Course Edition";
         }
         field(7; Description; Text[100])
         {
@@ -168,7 +168,7 @@ table 50103 "CLIP Course Ledger Entry"
         exit(FindRecordManagement.GetLastEntryIntFieldValue(Rec, FieldNo("Entry No.")))
     end;
 
-    procedure CopyFromResJnlLine(CourseJournalLine: Record "CLIP Course Journal Line")
+    procedure CopyFromResJnlLine(CourseJournalLine: Record "Course Journal Line")
     begin
         // "Entry Type" := CourseJournalLine."Entry Type";
         "Document No." := CourseJournalLine."Document No.";
@@ -194,7 +194,7 @@ table 50103 "CLIP Course Ledger Entry"
     // end;
 
     [IntegrationEvent(false, false)]
-    procedure OnAfterCopyFromCourseJournalLine(var CourseLedgerEntry: Record "CLIP Course Ledger Entry"; CourseJournalLine: Record "CLIP Course Journal Line")
+    procedure OnAfterCopyFromCourseJournalLine(var CourseLedgerEntry: Record "Course Ledger Entry"; CourseJournalLine: Record "Course Journal Line")
     begin
     end;
 }

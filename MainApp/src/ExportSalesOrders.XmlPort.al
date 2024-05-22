@@ -1,4 +1,4 @@
-xmlport 50100 "CLIP Export Sales Orders"
+xmlport 50100 "Export Sales Orders"
 {
     Caption = 'Export Sales Orders', comment = 'ESP="Exportación de Pedidos de Venta"';
     Direction = Export;

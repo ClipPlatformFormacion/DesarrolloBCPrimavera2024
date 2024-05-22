@@ -1,4 +1,4 @@
-codeunit 50104 "CLIP Silver Customer Level" implements "CLIP Customer Level"
+codeunit 50104 "Silver Customer Level" implements "Customer Level"
 {
     procedure GetDiscount(): Decimal
     begin

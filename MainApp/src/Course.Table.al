@@ -7,7 +7,7 @@ using Microsoft.Finance.VAT.Setup;
 table 50100 "Course"
 {
     Caption = 'Course', comment = 'ESP="Curso"';
-    LookupPageId = "CLIP Course List";
+    LookupPageId = "Course List";
 
     fields
     {
@@ -18,7 +18,7 @@ table 50100 "Course"
 
             trigger OnValidate()
             var
-                ResSetup: Record "CLIP Courses Setup";
+                ResSetup: Record "Courses Setup";
                 NoSeriesMgt: Codeunit NoSeriesManagement;
                 IsHandled: Boolean;
             begin
@@ -63,7 +63,7 @@ table 50100 "Course"
             OptionCaption = ' ,Instructor-Lead,Video Tutorial', Comment = 'ESP=" ,Guiado por profesor,Vídeo tutorial"';
             DataClassification = CustomerContent;
         }
-        field(7; "Type (Enum)"; Enum "CLIP Course Type")
+        field(7; "Type (Enum)"; Enum "Course Type")
         {
             Caption = 'Type (Enum)', Comment = 'ESP="Tipo (Enum)"';
             DataClassification = CustomerContent;
@@ -105,7 +105,7 @@ table 50100 "Course"
 
     trigger OnInsert()
     var
-        ResSetup: Record "CLIP Courses Setup";
+        ResSetup: Record "Courses Setup";
         NoSeriesMgt: Codeunit NoSeriesManagement;
         IsHandled: Boolean;
     begin
@@ -124,7 +124,7 @@ table 50100 "Course"
     procedure AssistEdit(OldRes: Record "Course") Result: Boolean
     var
         Res: Record "Course";
-        ResSetup: Record "CLIP Courses Setup";
+        ResSetup: Record "Courses Setup";
         NoSeriesMgt: Codeunit NoSeriesManagement;
         IsHandled: Boolean;
     begin

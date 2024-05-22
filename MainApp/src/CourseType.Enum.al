@@ -1,4 +1,4 @@
-enum 50100 "CLIP Course Type"
+enum 50100 "Course Type"
 {
     Extensible = true;
 

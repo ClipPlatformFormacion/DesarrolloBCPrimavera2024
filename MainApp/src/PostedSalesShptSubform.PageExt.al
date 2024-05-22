@@ -1,10 +1,10 @@
-pageextension 50103 "CLIP Posted SalesShptSubform" extends "Posted Sales Shpt. Subform"
+pageextension 50103 "Posted SalesShptSubform" extends "Posted Sales Shpt. Subform"
 {
     layout
     {
         addafter("No.")
         {
-            field("CLIP Course Edition"; Rec."CLIP Course Edition")
+            field("Course Edition"; Rec."Course Edition")
             {
                 ApplicationArea = All;
             }

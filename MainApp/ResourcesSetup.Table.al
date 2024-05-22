@@ -25,8 +25,6 @@ table 50105 "Resources Setup"
         // Add changes to field groups here
     }
 
-    var
-        myInt: Integer;
 
     trigger OnInsert()
     begin

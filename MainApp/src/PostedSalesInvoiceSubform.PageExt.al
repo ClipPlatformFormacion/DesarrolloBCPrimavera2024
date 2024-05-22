@@ -1,10 +1,10 @@
-pageextension 50102 "CLIP PostedSalesInvoiceSubform" extends "Posted Sales Invoice Subform"
+pageextension 50102 "PostedSalesInvoiceSubform" extends "Posted Sales Invoice Subform"
 {
     layout
     {
         addafter("No.")
         {
-            field("CLIP Course Edition"; Rec."CLIP Course Edition")
+            field("Course Edition"; Rec."Course Edition")
             {
                 ApplicationArea = All;
                 Visible = false;

@@ -1,4 +1,4 @@
-page 50102 "CLIP Courses Setup"
+page 50102 "Courses Setup"
 {
     AccessByPermission = TableData "Course" = R;
     ApplicationArea = Jobs;
@@ -6,7 +6,7 @@ page 50102 "CLIP Courses Setup"
     DeleteAllowed = false;
     InsertAllowed = false;
     PageType = Card;
-    SourceTable = "CLIP Courses Setup";
+    SourceTable = "Courses Setup";
     UsageCategory = Administration;
 
     layout

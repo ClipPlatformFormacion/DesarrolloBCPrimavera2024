@@ -1,4 +1,4 @@
-codeunit 50150 "CLIP Framework Test"
+codeunit 50150 "Framework Test"
 {
     Subtype = Test;
 
@@ -17,7 +17,7 @@ codeunit 50150 "CLIP Framework Test"
     [Test]
     procedure GetMin_T001()
     var
-        GetMin: Codeunit "CLIP GetMin";
+        GetMin: Codeunit "GetMin";
         Assert: Codeunit Assert;
         ValorA: Integer;
         ValorB: Integer;
@@ -40,7 +40,7 @@ codeunit 50150 "CLIP Framework Test"
     [Test]
     procedure GetMin_T002()
     var
-        GetMin: Codeunit "CLIP GetMin";
+        GetMin: Codeunit "GetMin";
         ValorA: Integer;
         ValorB: Integer;
         Resultado: Integer;

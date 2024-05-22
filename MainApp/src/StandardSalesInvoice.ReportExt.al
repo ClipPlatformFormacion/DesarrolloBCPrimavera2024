@@ -1,10 +1,10 @@
-reportextension 50100 "CLIP Standard Sales - Invoice" extends "Standard Sales - Invoice"
+reportextension 50100 "Standard Sales - Invoice" extends "Standard Sales - Invoice"
 {
     dataset
     {
         add(Line)
         {
-            column(CLIP_Course_Edition; "CLIP Course Edition") { IncludeCaption = true; }
+            column(CLIP_Course_Edition; "Course Edition") { IncludeCaption = true; }
         }
     }
 
@@ -14,7 +14,7 @@ reportextension 50100 "CLIP Standard Sales - Invoice" extends "Standard Sales - 
         {
             addlast(Options)
             {
-                field("CLIP UnTexto"; 'Un texto')
+                field("UnTexto"; 'Un texto')
                 {
                     ApplicationArea = All;
                     Editable = false;
@@ -29,7 +29,7 @@ reportextension 50100 "CLIP Standard Sales - Invoice" extends "Standard Sales - 
 
     rendering
     {
-        layout("CLIP SalesInvoiceWithEdition")
+        layout("SalesInvoiceWithEdition")
         {
             Type = RDLC;
             LayoutFile = 'src/StandardSalesInvoice.rdl';
