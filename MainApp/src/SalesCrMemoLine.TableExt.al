@@ -1,3 +1,8 @@
+namespace ClipPlatform.Course.Sales;
+
+using Microsoft.Sales.History;
+using ClipPlatform.Course.MasterData;
+
 tableextension 50103 "Sales Cr.Memo Line" extends "Sales Cr.Memo Line"
 {
     fields

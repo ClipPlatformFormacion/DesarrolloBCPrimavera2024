@@ -1,3 +1,7 @@
+namespace ClipPlatform.Course.MasterData;
+
+using ClipPlatform.Course.Ledger;
+
 page 50101 "Course Card"
 {
     Caption = 'Course Card', Comment = 'ESP="Ficha curso"';

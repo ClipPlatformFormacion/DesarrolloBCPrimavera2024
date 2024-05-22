@@ -1,3 +1,7 @@
+namespace ClipPlatform.Course.Sales;
+
+using Microsoft.Sales.History;
+using ClipPlatform.Course.MasterData;
 tableextension 50104 "Return Receipt Line" extends "Return Receipt Line"
 {
     fields

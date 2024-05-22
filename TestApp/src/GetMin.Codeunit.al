@@ -1,3 +1,5 @@
+namespace ClipPlatform.Testing;
+
 codeunit 50151 "GetMin"
 {
     procedure GetMin(p1: Integer; p2: Integer): Integer

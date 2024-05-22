@@ -3,6 +3,76 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="Curso">
     <body>
       <group id="body">
+        <trans-unit id="Page 1447372974 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Course Ledger Entries</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Movs. cursos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1447372974 - Control 1667959142 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the Course.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Control Course No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1447372974 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the description of the posted entry.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1447372974 - Control 486908828 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the document number on the Course ledger entry.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Control Document No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1447372974 - Control 883711285 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the entry, as assigned from the specified number series when the entry was created.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Control Entry No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1447372974 - Control 3710982960 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the date when the entry was posted.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Control Posting Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1447372974 - Control 2704404533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of units of the item or Course specified on the line.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Control Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1447372974 - Control 2812148497 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the total price of the posted entry.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Control Total Price - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1447372974 - Control 2937233469 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the price of one unit of the item or Course. You can enter a price manually or have it entered according to the Price/Profit Calculation field on the related card.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Control Unit Price - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1447372974 - Action 2256583518 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ent&amp;ry</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Action Ent&amp;ry - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1447372974 - Action 1405007275 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Find entries and documents that exist for the document number and posting date on the selected document. (Formerly this action was named Navigate.)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Action &amp;Navigate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1447372974 - Action 1405007275 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Find entries...</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Action &amp;Navigate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1447372974 - Action 3383493608 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Process</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Action Category_Process - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1447372974 - Action 1033528029 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Action Category_Entry - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3534050887 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Course</source>
           <note from="Developer" annotates="general" priority="2">ESP="Curso"</note>
@@ -63,46 +133,6 @@
           <note from="Developer" annotates="general" priority="2">ESP="Grupo contable IVA prod."</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Course - Field VAT Prod. Posting Group - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 2189160554 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Resources Setup</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Resources Setup - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2189160554 - Control 1532816877 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Numbering</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Resources Setup - Control Numbering - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2189160554 - Control 2295493946 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the number series code you can use to assign numbers to resources.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Resources Setup - Control Resource Nos. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2189160554 - Control 1149200971 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies whether time sheets must be approved on a per job basis by the user specified for the job.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Resources Setup - Control Time Sheet by Job Approval - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2189160554 - Control 3096448396 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the first weekday to use on a time sheet. The default is Monday.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Resources Setup - Control Time Sheet First Weekday - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2189160554 - Control 2677746018 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the number series code you can use to assign document numbers to time sheets.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Resources Setup - Control Time Sheet Nos. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2189160554 - Control 487830357 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies if a new time sheet experience should be used.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Resources Setup - Control Use New Time Sheet Experience - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Table 2189160554 - Field 1296262074 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>MyField</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Resources Setup - Field MyField - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Table 1535828835 - Field 1667959142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Course No.</source>
           <note from="Developer" annotates="general" priority="2">ESP="Nº curso"</note>
@@ -132,6 +162,186 @@
           <source>Start Date</source>
           <note from="Developer" annotates="general" priority="2">ESP="Fecha inicio"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Course Edition - Field Start Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1316784976 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Course Ledger Entry</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Mov. curso"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1316784976 - Field 1535828835 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Edition</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Edición"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field Course Edition - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1316784976 - Field 1667959142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Course No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field Course No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1316784976 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1316784976 - Field 580412389 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field Document Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1316784976 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1316784976 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1316784976 - Field 1527563463 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>External Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field External Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1316784976 - Field 3710982960 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field Posting Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1316784976 - Field 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1316784976 - Field 2812148497 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Price</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field Total Price - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1316784976 - Field 2937233469 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Price</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field Unit Price - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1158824803 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Course Card</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ficha curso"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Card - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1158824803 - Control 3534050887 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Course</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Curso"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Card - Control Course - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1158824803 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>A tooltip</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Una ayuda"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Card - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1158824803 - Control 1450094168 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoicing</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Facturación"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Card - Control Invoicing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1158824803 - Control 250015302 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Training Details</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Detalles formativos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Card - Control TrainingDetails - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1158824803 - Action 2360815950 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Editions</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ediciones"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Card - Action CourseEditions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1158824803 - Action 1111476699 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View the history of transactions that have been posted for the selected record.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Card - Action Ledger E&amp;ntries - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1158824803 - Action 1111476699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ledger E&amp;ntries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Card - Action Ledger E&amp;ntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3965590126 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Course Editions</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ediciones curso"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Editions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1050106769 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Courses</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Cursos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1050106769 - Action 2360815950 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Editions</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ediciones"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course List - Action CourseEditions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1050106769 - Action 1111476699 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View the history of transactions that have been posted for the selected record.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course List - Action Ledger E&amp;ntries - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1050106769 - Action 1111476699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ledger E&amp;ntries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course List - Action Ledger E&amp;ntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1050106769 - Action 4252305525 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import courses from an XML file.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course List - Action ImportCourses - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1050106769 - Action 4252305525 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Courses</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Importación de Cursos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course List - Action ImportCourses - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1571887198 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update Course Prices</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Actualiza los precios de los cursos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Course Prices - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1571887198 - Method 1544076788 - NamedType 233268983" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The percentaje cannot be negative</source>
+          <note from="Developer" annotates="general" priority="2">ESP="El porcentaje no puede ser negativo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Course Prices - Method OnPreReport - NamedType PercentajeCannotBeNegativeErr</note>
+        </trans-unit>
+        <trans-unit id="Report 1571887198 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Opciones"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Course Prices - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1571887198 - Control 1158296446 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Percentaje by which prices will be incremented</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Porcentaje de incremento de los precios"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Course Prices - Control PercentajeControl - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1571887198 - Control 1158296446 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Percentaje</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Porcentaje"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Course Prices - Control PercentajeControl - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 3365063573 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Courses</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Importación de Cursos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort Import Courses - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 964565567 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2">ESP=" "</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Course Type - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 964565567 - EnumValue 1965633904 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Instructor-Lead</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Guiado por profesor"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Course Type - EnumValue Instructor-Lead - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 964565567 - EnumValue 770452047 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Video Tutorial</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Vídeo tutorial"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Course Type - EnumValue Video Tutorial - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1927320422 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Course Journal Line</source>
@@ -223,261 +433,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Course Journal Line - Field Unit Price - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1316784976 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Course Ledger Entry</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Mov. curso"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1316784976 - Field 1535828835 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Edition</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Edición"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field Course Edition - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1316784976 - Field 1667959142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Course No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field Course No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1316784976 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Description</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field Description - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1316784976 - Field 580412389 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Document Date</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field Document Date - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1316784976 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Document No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field Document No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1316784976 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Entry No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field Entry No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1316784976 - Field 1527563463 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>External Document No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field External Document No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1316784976 - Field 3710982960 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Posting Date</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field Posting Date - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1316784976 - Field 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Quantity</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field Quantity - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1316784976 - Field 2812148497 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Total Price</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field Total Price - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1316784976 - Field 2937233469 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Unit Price</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Ledger Entry - Field Unit Price - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 3691325147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Courses Setup</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Configuración cursos"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Courses Setup - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 3691325147 - Field 3345900843 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Course Nos.</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Nº serie curso"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Courses Setup - Field Course Nos. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 3691325147 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Primary Key</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Courses Setup - Field Primary Key - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 202725597 - Method 2157820504 - NamedType 1176815304" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The current sale for course %1 edition %2 will exceed the maximum students %3 (%4)</source>
-          <note from="Developer" annotates="general" priority="2">ESP="La venta actual para el curso %1 edición %2 superará el número máximo de alumnos %3 (ventas previas: %4)"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Course - Sales Management - Method CheckSalesForCourseEdition - NamedType MaxStudentsExceededMsg</note>
-        </trans-unit>
-        <trans-unit id="Page 1158824803 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Course Card</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Ficha curso"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Card - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1158824803 - Control 3534050887 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Course</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Curso"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Card - Control Course - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1158824803 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>A tooltip</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Una ayuda"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Card - Control No. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1158824803 - Control 1450094168 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Invoicing</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Facturación"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Card - Control Invoicing - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1158824803 - Control 250015302 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Training Details</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Detalles formativos"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Card - Control TrainingDetails - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1158824803 - Action 2360815950 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Editions</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Ediciones"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Card - Action CourseEditions - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1158824803 - Action 1111476699 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>View the history of transactions that have been posted for the selected record.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Card - Action Ledger E&amp;ntries - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1158824803 - Action 1111476699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Ledger E&amp;ntries</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Card - Action Ledger E&amp;ntries - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3965590126 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Course Editions</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Ediciones curso"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Editions - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1447372974 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Course Ledger Entries</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Movs. cursos"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1447372974 - Control 1667959142 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the number of the Course.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Control Course No. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1447372974 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the description of the posted entry.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Control Description - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1447372974 - Control 486908828 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the document number on the Course ledger entry.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Control Document No. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1447372974 - Control 883711285 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the number of the entry, as assigned from the specified number series when the entry was created.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Control Entry No. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1447372974 - Control 3710982960 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the date when the entry was posted.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Control Posting Date - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1447372974 - Control 2704404533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the number of units of the item or Course specified on the line.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Control Quantity - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1447372974 - Control 2812148497 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the total price of the posted entry.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Control Total Price - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1447372974 - Control 2937233469 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the price of one unit of the item or Course. You can enter a price manually or have it entered according to the Price/Profit Calculation field on the related card.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Control Unit Price - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1447372974 - Action 2256583518 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Ent&amp;ry</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Action Ent&amp;ry - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1447372974 - Action 1405007275 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Find entries and documents that exist for the document number and posting date on the selected document. (Formerly this action was named Navigate.)</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Action &amp;Navigate - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1447372974 - Action 1405007275 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Find entries...</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Action &amp;Navigate - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1447372974 - Action 3383493608 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Process</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Action Category_Process - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1447372974 - Action 1033528029 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Entry</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Ledger Entries - Action Category_Entry - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1050106769 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Courses</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Cursos"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course List - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1050106769 - Action 2360815950 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Editions</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Ediciones"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course List - Action CourseEditions - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1050106769 - Action 1111476699 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>View the history of transactions that have been posted for the selected record.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course List - Action Ledger E&amp;ntries - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1050106769 - Action 1111476699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Ledger E&amp;ntries</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course List - Action Ledger E&amp;ntries - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1050106769 - Action 4252305525 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Import courses from an XML file.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course List - Action ImportCourses - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1050106769 - Action 4252305525 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Import Courses</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Importación de Cursos"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course List - Action ImportCourses - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3691325147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Courses Setup</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Conf. cursos"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Courses Setup - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3691325147 - Control 1532816877 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Numbering</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Numeración"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Courses Setup - Control Numbering - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3691325147 - Control 3345900843 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the number series code you can use to assign numbers to Courses.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Courses Setup - Control Course Nos. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1269526094 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Query</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Query"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Query - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1269526094 - Action 1916069359 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Execute Query</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Ejecutar query"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Query - Action ExecuteQuery - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1269526094 - Action 2022745915 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Use Query</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Usar query"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Query - Action UseQuery - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Report 2336559945 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Courses &amp; Editions</source>
           <note from="Developer" annotates="general" priority="2">ESP="Cursos y Ediciones"</note>
@@ -498,55 +453,10 @@
           <note from="Developer" annotates="general" priority="2">ESP="Imprimir detalles"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Courses &amp; Editions - Control PrintDetailsControl - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Report 1571887198 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Update Course Prices</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Actualiza los precios de los cursos"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report Update Course Prices - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 1571887198 - Method 1544076788 - NamedType 233268983" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The percentaje cannot be negative</source>
-          <note from="Developer" annotates="general" priority="2">ESP="El porcentaje no puede ser negativo"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report Update Course Prices - Method OnPreReport - NamedType PercentajeCannotBeNegativeErr</note>
-        </trans-unit>
-        <trans-unit id="Report 1571887198 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Options</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Opciones"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report Update Course Prices - Control Options - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Report 1571887198 - Control 1158296446 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Percentaje by which prices will be incremented</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Porcentaje de incremento de los precios"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report Update Course Prices - Control PercentajeControl - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Report 1571887198 - Control 1158296446 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Percentaje</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Porcentaje"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report Update Course Prices - Control PercentajeControl - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="XmlPort 2866862339 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Export Sales Orders</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Exportación de Pedidos de Venta"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">XmlPort Export Sales Orders - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="XmlPort 3365063573 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Import Courses</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Importación de Cursos"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">XmlPort Import Courses - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 3332899200 - Action 2866862339 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3332899200">
-          <source>Export Sales Orders</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Exportación de Pedidos de Venta"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Sales Order List - Action Export Sales Orders - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 1994964448 - Field 687971871 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
-          <source>Discount</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Descuento"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Customer - Field Discount - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 1994964448 - Field 1789400218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
-          <source>Level</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Nivel"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Customer - Field Level - Property Caption</note>
+        <trans-unit id="Codeunit 202725597 - Method 2157820504 - NamedType 1176815304" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The current sale for course %1 edition %2 will exceed the maximum students %3 (%4)</source>
+          <note from="Developer" annotates="general" priority="2">ESP="La venta actual para el curso %1 edición %2 superará el número máximo de alumnos %3 (ventas previas: %4)"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Course - Sales Management - Method CheckSalesForCourseEdition - NamedType MaxStudentsExceededMsg</note>
         </trans-unit>
         <trans-unit id="TableExtension 1173465396 - Field 1535828835 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1173465396">
           <source>Course Edition</source>
@@ -578,20 +488,90 @@
           <note from="Developer" annotates="general" priority="2">ESP="Edición curso"</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Shipment Line - Field Course Edition - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 964565567 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source> </source>
-          <note from="Developer" annotates="general" priority="2">ESP=" "</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum Course Type - EnumValue   - Property Caption</note>
+        <trans-unit id="EnumExtension 1710557762 - EnumValue 3534050887 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Enum 1710557762">
+          <source>Course</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Curso"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">EnumExtension Sales Line Type - EnumValue Course - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 964565567 - EnumValue 1965633904 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Instructor-Lead</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Guiado por profesor"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum Course Type - EnumValue Instructor-Lead - Property Caption</note>
+        <trans-unit id="Table 3691325147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Courses Setup</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Configuración cursos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Courses Setup - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 964565567 - EnumValue 770452047 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Video Tutorial</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Vídeo tutorial"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum Course Type - EnumValue Video Tutorial - Property Caption</note>
+        <trans-unit id="Table 3691325147 - Field 3345900843 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Course Nos.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº serie curso"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Courses Setup - Field Course Nos. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3691325147 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Courses Setup - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2189160554 - Field 1296262074 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>MyField</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Resources Setup - Field MyField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3691325147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Courses Setup</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Conf. cursos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Courses Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3691325147 - Control 1532816877 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Numbering</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Numeración"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Courses Setup - Control Numbering - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3691325147 - Control 3345900843 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number series code you can use to assign numbers to Courses.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Courses Setup - Control Course Nos. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2189160554 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Resources Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Resources Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2189160554 - Control 1532816877 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Numbering</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Resources Setup - Control Numbering - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2189160554 - Control 2295493946 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number series code you can use to assign numbers to resources.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Resources Setup - Control Resource Nos. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2189160554 - Control 1149200971 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether time sheets must be approved on a per job basis by the user specified for the job.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Resources Setup - Control Time Sheet by Job Approval - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2189160554 - Control 3096448396 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the first weekday to use on a time sheet. The default is Monday.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Resources Setup - Control Time Sheet First Weekday - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2189160554 - Control 2677746018 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number series code you can use to assign document numbers to time sheets.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Resources Setup - Control Time Sheet Nos. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2189160554 - Control 487830357 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if a new time sheet experience should be used.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Resources Setup - Control Use New Time Sheet Experience - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1994964448 - Field 687971871 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
+          <source>Discount</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Descuento"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Customer - Field Discount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1994964448 - Field 1789400218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
+          <source>Level</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nivel"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Customer - Field Level - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 2199286534 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source> </source>
@@ -608,10 +588,30 @@
           <note from="Developer" annotates="general" priority="2">ESP="Plata"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum Customer Level - EnumValue Silver - Property Caption</note>
         </trans-unit>
-        <trans-unit id="EnumExtension 1710557762 - EnumValue 3534050887 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Enum 1710557762">
-          <source>Course</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Curso"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">EnumExtension Sales Line Type - EnumValue Course - Property Caption</note>
+        <trans-unit id="Page 1269526094 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Query</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Query"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Query - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1269526094 - Action 1916069359 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Execute Query</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ejecutar query"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Query - Action ExecuteQuery - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1269526094 - Action 2022745915 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use Query</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Usar query"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Query - Action UseQuery - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 2866862339 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export Sales Orders</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Exportación de Pedidos de Venta"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort Export Sales Orders - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3332899200 - Action 2866862339 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3332899200">
+          <source>Export Sales Orders</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Exportación de Pedidos de Venta"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Sales Order List - Action Export Sales Orders - Property Caption</note>
         </trans-unit>
       </group>
     </body>

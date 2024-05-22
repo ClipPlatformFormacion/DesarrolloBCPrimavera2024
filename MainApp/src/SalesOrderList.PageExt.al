@@ -1,3 +1,7 @@
+namespace ClipPlatform.Sales;
+
+using Microsoft.Sales.Document;
+
 pageextension 50105 "Sales Order List" extends "Sales Order List"
 {
     actions

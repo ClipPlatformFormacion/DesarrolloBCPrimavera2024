@@ -1,3 +1,14 @@
+namespace ClipPlatform.Course.Sales;
+
+using ClipPlatform.Course;
+using Microsoft.Utilities;
+using Microsoft.Sales.Document;
+using Microsoft.Sales.Posting;
+using ClipPlatform.Course.MasterData;
+using Microsoft.Finance.GeneralLedger.Journal;
+using ClipPlatform.Course.Posting;
+using Microsoft.Finance.GeneralLedger.Posting;
+
 codeunit 50100 "Course - Sales Management"
 {
     [EventSubscriber(ObjectType::Table, Database::"Option Lookup Buffer", OnBeforeIncludeOption, '', false, false)]

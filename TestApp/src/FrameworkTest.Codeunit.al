@@ -1,3 +1,5 @@
+namespace ClipPlatform.Testing;
+
 codeunit 50150 "Framework Test"
 {
     Subtype = Test;

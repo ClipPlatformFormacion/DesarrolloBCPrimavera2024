@@ -1,3 +1,7 @@
+namespace ClipPlatform.Course.Reporting;
+
+using ClipPlatform.Course.MasterData;
+
 report 50101 "Courses & Editions"
 {
     Caption = 'Courses & Editions', comment = 'ESP="Cursos y Ediciones"';

@@ -1,3 +1,8 @@
+namespace ClipPlatform.Course.Sales;
+
+using Microsoft.Sales.Archive;
+using ClipPlatform.Course.MasterData;
+
 tableextension 50105 "Sales Line Archive" extends "Sales Line Archive"
 {
     fields

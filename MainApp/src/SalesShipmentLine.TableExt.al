@@ -1,3 +1,8 @@
+namespace ClipPlatform.Course.Sales;
+
+using Microsoft.Sales.History;
+using ClipPlatform.Course.MasterData;
+
 tableextension 50102 "Sales Shipment Line" extends "Sales Shipment Line"
 {
     fields

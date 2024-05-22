@@ -1,3 +1,7 @@
+namespace ClipPlatform.Course.MasterData;
+
+using ClipPlatform.Course.Ledger;
+
 page 50100 "Course List"
 {
     Caption = 'Courses', Comment = 'ESP="Cursos"';

@@ -1,3 +1,5 @@
+namespace ClipPlatform.Course.MasterData;
+
 page 50103 "Course Editions"
 {
     Caption = 'Course Editions', Comment = 'ESP="Ediciones curso"';

@@ -1,3 +1,9 @@
+namespace ClipPlatform.Course.Testing;
+
+using ClipPlatform.Course.MasterData;
+using Microsoft.Sales.Document;
+using Microsoft.Sales.History;
+
 codeunit 50152 "Course Testing"
 {
     Subtype = Test;

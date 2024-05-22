@@ -1,4 +1,8 @@
-pageextension 50103 "Posted SalesShptSubform" extends "Posted Sales Shpt. Subform"
+namespace ClipPlatform.Course.Sales;
+
+using Microsoft.Sales.History;
+
+pageextension 50103 "Posted Sales Shpt. Subform" extends "Posted Sales Shpt. Subform"
 {
     layout
     {

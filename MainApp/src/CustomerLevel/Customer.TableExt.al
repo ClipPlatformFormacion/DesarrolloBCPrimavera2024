@@ -1,3 +1,7 @@
+namespace ClipPlatform.CustomerLevel;
+
+using Microsoft.Sales.Customer;
+
 tableextension 50106 "Customer" extends Customer
 {
     fields

@@ -1,3 +1,10 @@
+namespace ClipPlatform.Course.Posting;
+
+using ClipPlatform.Course.MasterData;
+using Microsoft.Finance.GeneralLedger.Setup;
+using Microsoft.Foundation.NoSeries;
+using Microsoft.Sales.Document;
+
 table 50104 "Course Journal Line"
 {
     Caption = 'Course Journal Line';

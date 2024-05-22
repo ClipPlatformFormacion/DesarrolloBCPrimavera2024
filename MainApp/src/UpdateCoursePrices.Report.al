@@ -1,3 +1,5 @@
+namespace ClipPlatform.Course.MasterData;
+
 report 50100 "Update Course Prices"
 {
     Caption = 'Update Course Prices', Comment = 'ESP="Actualiza los precios de los cursos"';

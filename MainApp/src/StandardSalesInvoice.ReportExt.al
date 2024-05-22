@@ -1,3 +1,7 @@
+namespace ClipPlatform.Course.Sales;
+
+using Microsoft.Sales.History;
+
 reportextension 50100 "Standard Sales - Invoice" extends "Standard Sales - Invoice"
 {
     dataset

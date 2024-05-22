@@ -1,3 +1,7 @@
+namespace ClipPlatform.Course.Sales;
+
+using Microsoft.Sales.Document;
+
 pageextension 50100 "Sales Order Subform" extends "Sales Order Subform"
 {
     layout

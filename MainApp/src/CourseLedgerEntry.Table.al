@@ -1,3 +1,9 @@
+namespace ClipPlatform.Course.MasterData;
+
+using Microsoft.Utilities;
+using ClipPlatform.Course.Posting;
+using ClipPlatform.Course.Ledger;
+
 table 50103 "Course Ledger Entry"
 {
     Caption = 'Course Ledger Entry', Comment = 'ESP="Mov. curso"';

@@ -1,3 +1,5 @@
+namespace ClipPlatform.Course.MasterData;
+
 table 50102 "Course Edition"
 {
     DataClassification = CustomerContent;

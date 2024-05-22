@@ -1,4 +1,4 @@
-namespace ClipPlatform.Tables;
+namespace ClipPlatform.Course.Setup;
 
 table 50105 "Resources Setup"
 {

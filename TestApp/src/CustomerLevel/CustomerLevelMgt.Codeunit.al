@@ -1,3 +1,5 @@
+namespace ClipPlatform.CustomerLevel;
+
 codeunit 50154 "Customer Level Mgt." implements "Customer Level"
 {
     procedure GetDiscount(): Decimal

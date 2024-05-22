@@ -1,3 +1,8 @@
+namespace ClipPlatform.Course.Posting;
+
+using Microsoft.Finance.GeneralLedger.Setup;
+using ClipPlatform.Course.MasterData;
+
 codeunit 50101 "Course Journal-Post Line"
 {
     Permissions = TableData "Course Ledger Entry" = rimd;

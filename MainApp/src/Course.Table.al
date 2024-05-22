@@ -1,8 +1,9 @@
-namespace ClipPlatform.Course;
+namespace ClipPlatform.Course.MasterData;
 
 using Microsoft.Foundation.NoSeries;
 using Microsoft.Finance.GeneralLedger.Setup;
 using Microsoft.Finance.VAT.Setup;
+using ClipPlatform.Course.Setup;
 
 table 50100 "Course"
 {

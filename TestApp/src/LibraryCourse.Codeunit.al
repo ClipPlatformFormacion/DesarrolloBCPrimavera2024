@@ -1,3 +1,10 @@
+namespace ClipPlatform.Course.Testing;
+
+using ClipPlatform.Course.MasterData;
+using Microsoft.Finance.GeneralLedger.Setup;
+using Microsoft.Finance.VAT.Setup;
+using ClipPlatform.Course.Setup;
+
 codeunit 50153 "Library - Course"
 {
     procedure CreateCourse() Course: Record "Course"

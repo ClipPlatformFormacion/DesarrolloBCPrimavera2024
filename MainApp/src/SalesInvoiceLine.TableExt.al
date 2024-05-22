@@ -1,3 +1,8 @@
+namespace ClipPlatform.Course.Sales;
+
+using Microsoft.Sales.History;
+using ClipPlatform.Course.MasterData;
+
 tableextension 50101 "Sales Invoice Line" extends "Sales Invoice Line"
 {
     fields

@@ -1,3 +1,5 @@
+namespace ClipPlatform.Item;
+
 page 50105 "Query"
 {
     Caption = 'Query', comment = 'ESP="Query"';

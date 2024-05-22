@@ -1,3 +1,7 @@
+namespace ClipPlatform.Course.Setup;
+
+using ClipPlatform.Course.MasterData;
+
 page 50102 "Courses Setup"
 {
     AccessByPermission = TableData "Course" = R;

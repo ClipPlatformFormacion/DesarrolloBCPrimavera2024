@@ -1,3 +1,8 @@
+namespace ClipPlatform.Course.Ledger;
+
+using ClipPlatform.Course.MasterData;
+using Microsoft.Foundation.Navigate;
+
 page 50104 "Course Ledger Entries"
 {
     ApplicationArea = All;

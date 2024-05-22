@@ -1,4 +1,4 @@
-namespace ClipPlatform.Pages;
+namespace ClipPlatform.Course.Setup;
 
 using Microsoft.Projects.Resources.Resource;
 

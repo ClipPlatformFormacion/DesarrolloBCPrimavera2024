@@ -1,9 +1,14 @@
-namespace ClipPlatform;
+namespace ClipPlatform.Course.Permissions;
 
-using ClipPlatform.Tables;
+using ClipPlatform.Course.Setup;
+using ClipPlatform.Course.MasterData;
+using ClipPlatform.Course.Sales;
+using ClipPlatform.Course.Posting;
+using ClipPlatform.Course.Ledger;
+using ClipPlatform.Course.Reporting;
+using ClipPlatform.Sales;
+using ClipPlatform.Item;
 using ClipPlatform.CustomerLevel;
-using ClipPlatform.Pages;
-using ClipPlatform.Course;
 permissionset 50100 "Course"
 {
     Assignable = true;

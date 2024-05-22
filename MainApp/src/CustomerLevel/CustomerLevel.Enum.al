@@ -1,3 +1,5 @@
+namespace ClipPlatform.CustomerLevel;
+
 enum 50101 "Customer Level" implements "Customer Level"
 {
     Extensible = true;
