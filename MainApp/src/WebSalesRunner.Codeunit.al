@@ -1,4 +1,5 @@
 namespace ClipPlatform.Course.Sales;
+using Microsoft.Sales.Customer;
 
 codeunit 50105 "Web Sales Runner"
 {
@@ -17,17 +18,27 @@ codeunit 50105 "Web Sales Runner"
                 CourseWebSales.Status := CourseWebSales.Status::Processing;
                 CourseWebSales.Modify();
 
-                ProcessCourseWebSale(CourseWebSales);
-
-                CourseWebSales.Status := CourseWebSales.Status::Processed;
+                if ProcessCourseWebSale(CourseWebSales) then
+                    CourseWebSales.Status := CourseWebSales.Status::Processed
+                else begin
+                    CourseWebSales.Status := CourseWebSales.Status::Error;
+                    CourseWebSales."Error Message" := GetLastErrorText();
+                end;
                 CourseWebSales.Modify();
 
                 Commit();
             until CourseWebSales.Next() = 0;
     end;
 
+    [TryFunction]
     local procedure ProcessCourseWebSale(CourseWebSales: Record "Course Web Sales")
+    var
+        Customer: Record Customer;
     begin
+        Customer.Init();
+        Customer."No." := CourseWebSales."Web Customer No.";
+        Customer.Insert();
+
         if CourseWebSales."Entry No." = 3 then
             Error('Processing Course Web Sale %1', CourseWebSales."Entry No.");
     end;
