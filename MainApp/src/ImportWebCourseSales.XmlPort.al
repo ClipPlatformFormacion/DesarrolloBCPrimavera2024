@@ -1,12 +1,12 @@
 xmlport 50102 "Import Web Course Sales"
 {
-    //TODO: Importar archivo con caracteres especiales
     Caption = 'Import Web Course Sales', comment = 'ESP="Importar ventas de cursos en la web"';
     Direction = Import;
     Format = VariableText;
     FieldSeparator = ';';
     UseRequestPage = false;
     DefaultFieldsValidation = false;
+    TextEncoding = UTF8;
 
     schema
     {
