@@ -41,5 +41,8 @@ permissionset 50100 "Course"
         report "Courses & Editions" = X,
         report "Update Course Prices" = X,
         xmlport "Export Sales Orders" = X,
-        xmlport "Import Courses" = X;
+        xmlport "Import Courses" = X,
+        table "Course Web Sales" = X,
+        tabledata "Course Web Sales" = RMID,
+        page "Course Web Sales" = X;
 }
