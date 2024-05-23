@@ -36,5 +36,8 @@ permissionset 50100 "CLIP Course"
         report "CLIP Courses & Editions" = X,
         report "CLIP Update Course Prices" = X,
         xmlport "CLIP Export Sales Orders" = X,
-        xmlport "CLIP Import Courses" = X;
+        xmlport "CLIP Import Courses" = X,
+        table "Course Web Sales" = X,
+        tabledata "Course Web Sales" = RMID,
+        page "Course Web Sales" = X;
 }
