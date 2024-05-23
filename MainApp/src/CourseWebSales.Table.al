@@ -1,3 +1,8 @@
+namespace ClipPlatform.Course.Sales;
+
+using ClipPlatform.Course.MasterData;
+using Microsoft.Sales.Customer;
+
 table 50106 "Course Web Sales"
 {
     Caption = 'Course Web Sales', comment = 'ESP="Ventas de cursos en la web"';
@@ -53,6 +58,14 @@ table 50106 "Course Web Sales"
         field(11; "Unit Price"; Decimal)
         {
             Caption = 'Unit Price', comment = 'ESP="Precio unitario"';
+        }
+        field(12; Status; Enum "Processing Status")
+        {
+            Caption = 'Status', comment = 'ESP="Estado"';
+        }
+        field(13; "Error Message"; Text[1024])
+        {
+            Caption = 'Error Message', comment = 'ESP="Mensaje de error"';
         }
     }
 
