@@ -1,7 +1,12 @@
-codeunit 50101 "CLIP Course Journal-Post Line"
+namespace ClipPlatform.Course.Posting;
+
+using Microsoft.Finance.GeneralLedger.Setup;
+using ClipPlatform.Course.MasterData;
+
+codeunit 50101 "Course Journal-Post Line"
 {
-    Permissions = TableData "CLIP Course Ledger Entry" = rimd;
-    TableNo = "CLIP Course Journal Line";
+    Permissions = TableData "Course Ledger Entry" = rimd;
+    TableNo = "Course Journal Line";
 
     trigger OnRun()
     begin
@@ -11,14 +16,14 @@ codeunit 50101 "CLIP Course Journal-Post Line"
 
     var
         GeneralLedgerSetup: Record "General Ledger Setup";
-        ResJournalLineGlobal: Record "CLIP Course Journal Line";
-        CourseLedgerEntry: Record "CLIP Course Ledger Entry";
+        ResJournalLineGlobal: Record "Course Journal Line";
+        CourseLedgerEntry: Record "Course Ledger Entry";
         Course: Record "Course";
         // ResJnlCheckLine: Codeunit "Res. Jnl.-Check Line";
         NextEntryNo: Integer;
         GLSetupRead: Boolean;
 
-    procedure RunWithCheck(var ResJournalLine: Record "CLIP Course Journal Line")
+    procedure RunWithCheck(var ResJournalLine: Record "Course Journal Line")
     begin
         ResJournalLineGlobal.Copy(ResJournalLine);
         Code();
@@ -72,17 +77,17 @@ codeunit 50101 "CLIP Course Journal-Post Line"
     end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnAfterPostCourseJournalLine(var CourseJournalLine: Record "CLIP Course Journal Line"; var CourseLedgerEntry: Record "CLIP Course Ledger Entry")
+    local procedure OnAfterPostCourseJournalLine(var CourseJournalLine: Record "Course Journal Line"; var CourseLedgerEntry: Record "Course Ledger Entry")
     begin
     end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnBeforePostCourseJournalLine(var CourseJournalLine: Record "CLIP Course Journal Line"; var IsHandled: Boolean)
+    local procedure OnBeforePostCourseJournalLine(var CourseJournalLine: Record "Course Journal Line"; var IsHandled: Boolean)
     begin
     end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnBeforeCourseLedgerEntryInsert(var CourseLedgerEntry: Record "CLIP Course Ledger Entry"; CourseJournalLine: Record "CLIP Course Journal Line")
+    local procedure OnBeforeCourseLedgerEntryInsert(var CourseLedgerEntry: Record "Course Ledger Entry"; CourseJournalLine: Record "Course Journal Line")
     begin
     end;
 }

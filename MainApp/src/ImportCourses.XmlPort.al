@@ -1,4 +1,6 @@
-xmlport 50101 "CLIP Import Courses"
+namespace ClipPlatform.Course.MasterData;
+
+xmlport 50101 "Import Courses"
 {
     Caption = 'Import Courses', comment = 'ESP="Importación de Cursos"';
     Direction = Export;

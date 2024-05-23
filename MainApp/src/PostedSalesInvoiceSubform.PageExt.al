@@ -1,10 +1,15 @@
-pageextension 50102 "CLIP PostedSalesInvoiceSubform" extends "Posted Sales Invoice Subform"
+namespace ClipPlatform.Course.Sales;
+
+using Microsoft.Sales.History;
+using ClipPlatform.Course.Sales;
+
+pageextension 50102 "Posted Sales Invoice Subform" extends "Posted Sales Invoice Subform"
 {
     layout
     {
         addafter("No.")
         {
-            field("CLIP Course Edition"; Rec."CLIP Course Edition")
+            field("Course Edition"; Rec."Course Edition")
             {
                 ApplicationArea = All;
                 Visible = false;

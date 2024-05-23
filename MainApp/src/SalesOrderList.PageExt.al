@@ -1,10 +1,14 @@
-pageextension 50105 "CLIP Sales Order List" extends "Sales Order List"
+namespace ClipPlatform.Sales;
+
+using Microsoft.Sales.Document;
+
+pageextension 50105 "Sales Order List" extends "Sales Order List"
 {
     actions
     {
         addfirst("O&rder")
         {
-            action("CLIP Export Sales Orders")
+            action("Export Sales Orders")
             {
                 ApplicationArea = All;
                 Caption = 'Export Sales Orders', comment = 'ESP="Exportación de Pedidos de Venta"';
@@ -12,7 +16,7 @@ pageextension 50105 "CLIP Sales Order List" extends "Sales Order List"
                 Promoted = true;
                 PromotedCategory = Process;
                 PromotedIsBig = true;
-                RunObject = xmlport "CLIP Export Sales Orders";
+                RunObject = xmlport "Export Sales Orders";
             }
         }
     }

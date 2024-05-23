@@ -1,4 +1,10 @@
-codeunit 50152 "CLIP Course Testing"
+namespace ClipPlatform.Course.Testing;
+
+using ClipPlatform.Course.MasterData;
+using Microsoft.Sales.Document;
+using Microsoft.Sales.History;
+
+codeunit 50152 "Course Testing"
 {
     Subtype = Test;
     TestPermissions = Disabled;
@@ -9,7 +15,7 @@ codeunit 50152 "CLIP Course Testing"
         Course: Record "Course";
         SalesHeader: Record "Sales Header";
         SalesLine: Record "Sales Line";
-        LibraryCourse: Codeunit "CLIP Library - Course";
+        LibraryCourse: Codeunit "Library - Course";
         LibrarySales: Codeunit "Library - Sales";
         Assert: Codeunit Assert;
     begin
@@ -23,7 +29,7 @@ codeunit 50152 "CLIP Course Testing"
         LibrarySales.CreateSalesLineSimple(SalesLine, SalesHeader);
 
         // [When] Seleccionar el curso en una línea de venta del documento
-        SalesLine.Validate(Type, "Sales Line Type"::"CLIP Course");
+        SalesLine.Validate(Type, "Sales Line Type"::"Course");
         SalesLine.Validate("No.", Course."No.");
         SalesLine.Modify(true);
 
@@ -38,11 +44,11 @@ codeunit 50152 "CLIP Course Testing"
     procedure CourseSalesPosting_EditionInPostedDocuments()
     var
         Course: Record "Course";
-        CourseEdition: Record "CLIP Course Edition";
+        CourseEdition: Record "Course Edition";
         SalesHeader: Record "Sales Header";
         SalesLine: Record "Sales Line";
         SalesInvoiceLine: Record "Sales Invoice Line";
-        LibraryCourse: Codeunit "CLIP Library - Course";
+        LibraryCourse: Codeunit "Library - Course";
         LibrarySales: Codeunit "Library - Sales";
         Assert: Codeunit Assert;
         DocumentNo: Code[20];
@@ -56,9 +62,9 @@ codeunit 50152 "CLIP Course Testing"
 
         LibrarySales.CreateSalesHeader(SalesHeader, "Sales Document Type"::Order, '');
         LibrarySales.CreateSalesLineSimple(SalesLine, SalesHeader);
-        SalesLine.Validate(Type, "Sales Line Type"::"CLIP Course");
+        SalesLine.Validate(Type, "Sales Line Type"::"Course");
         SalesLine.Validate("No.", Course."No.");
-        SalesLine.Validate("CLIP Course Edition", CourseEdition.Edition);
+        SalesLine.Validate("Course Edition", CourseEdition.Edition);
         SalesLine.Validate(Quantity, 1);
         SalesLine.Modify(true);
 
@@ -68,18 +74,18 @@ codeunit 50152 "CLIP Course Testing"
         // [Then] La edición está en los documentos registrados
         SalesInvoiceLine.SetRange("Document No.", DocumentNo);
         SalesInvoiceLine.FindFirst();
-        Assert.AreEqual(CourseEdition.Edition, SalesInvoiceLine."CLIP Course Edition", 'La edición en la línea de factura de venta no es correcto');
+        Assert.AreEqual(CourseEdition.Edition, SalesInvoiceLine."Course Edition", 'La edición en la línea de factura de venta no es correcto');
     end;
 
     [Test]
     procedure CourseSalesPosting_CourseLedgerEntry()
     var
         Course: Record "Course";
-        CourseEdition: Record "CLIP Course Edition";
+        CourseEdition: Record "Course Edition";
         SalesHeader: Record "Sales Header";
         SalesLine: Record "Sales Line";
-        CourseLedgerEntry: Record "CLIP Course Ledger Entry";
-        LibraryCourse: Codeunit "CLIP Library - Course";
+        CourseLedgerEntry: Record "Course Ledger Entry";
+        LibraryCourse: Codeunit "Library - Course";
         LibrarySales: Codeunit "Library - Sales";
         Assert: Codeunit Assert;
         DocumentNo: Code[20];
@@ -93,9 +99,9 @@ codeunit 50152 "CLIP Course Testing"
 
         LibrarySales.CreateSalesHeader(SalesHeader, "Sales Document Type"::Order, '');
         LibrarySales.CreateSalesLineSimple(SalesLine, SalesHeader);
-        SalesLine.Validate(Type, "Sales Line Type"::"CLIP Course");
+        SalesLine.Validate(Type, "Sales Line Type"::"Course");
         SalesLine.Validate("No.", Course."No.");
-        SalesLine.Validate("CLIP Course Edition", CourseEdition.Edition);
+        SalesLine.Validate("Course Edition", CourseEdition.Edition);
         SalesLine.Validate(Quantity, 1);
         SalesLine.Modify(true);
 
@@ -111,7 +117,7 @@ codeunit 50152 "CLIP Course Testing"
 
         Assert.AreEqual(SalesHeader."Posting Date", CourseLedgerEntry."Posting Date", 'Dato incorrecto');
         Assert.AreEqual(SalesLine."No.", CourseLedgerEntry."Course No.", 'Dato incorrecto');
-        Assert.AreEqual(SalesLine."CLIP Course Edition", CourseLedgerEntry."Course Edition", 'Dato incorrecto');
+        Assert.AreEqual(SalesLine."Course Edition", CourseLedgerEntry."Course Edition", 'Dato incorrecto');
         Assert.AreEqual(SalesLine.Description, CourseLedgerEntry.Description, 'Dato incorrecto');
         Assert.AreEqual(SalesLine.Quantity, CourseLedgerEntry.Quantity, 'Dato incorrecto');
         Assert.AreEqual(SalesLine."Unit Price", CourseLedgerEntry."Unit Price", 'Dato incorrecto');
@@ -124,11 +130,11 @@ codeunit 50152 "CLIP Course Testing"
     procedure CourseSalesPostingCreditMemo_CourseLedgerEntry()
     var
         Course: Record "Course";
-        CourseEdition: Record "CLIP Course Edition";
+        CourseEdition: Record "Course Edition";
         SalesHeader: Record "Sales Header";
         SalesLine: Record "Sales Line";
-        CourseLedgerEntry: Record "CLIP Course Ledger Entry";
-        LibraryCourse: Codeunit "CLIP Library - Course";
+        CourseLedgerEntry: Record "Course Ledger Entry";
+        LibraryCourse: Codeunit "Library - Course";
         LibrarySales: Codeunit "Library - Sales";
         Assert: Codeunit Assert;
         DocumentNo: Code[20];
@@ -142,9 +148,9 @@ codeunit 50152 "CLIP Course Testing"
 
         LibrarySales.CreateSalesHeader(SalesHeader, "Sales Document Type"::"Credit Memo", '');
         LibrarySales.CreateSalesLineSimple(SalesLine, SalesHeader);
-        SalesLine.Validate(Type, "Sales Line Type"::"CLIP Course");
+        SalesLine.Validate(Type, "Sales Line Type"::"Course");
         SalesLine.Validate("No.", Course."No.");
-        SalesLine.Validate("CLIP Course Edition", CourseEdition.Edition);
+        SalesLine.Validate("Course Edition", CourseEdition.Edition);
         SalesLine.Validate(Quantity, 1);
         SalesLine.Modify(true);
 
@@ -160,7 +166,7 @@ codeunit 50152 "CLIP Course Testing"
 
         Assert.AreEqual(SalesHeader."Posting Date", CourseLedgerEntry."Posting Date", 'Dato incorrecto');
         Assert.AreEqual(SalesLine."No.", CourseLedgerEntry."Course No.", 'Dato incorrecto');
-        Assert.AreEqual(SalesLine."CLIP Course Edition", CourseLedgerEntry."Course Edition", 'Dato incorrecto');
+        Assert.AreEqual(SalesLine."Course Edition", CourseLedgerEntry."Course Edition", 'Dato incorrecto');
         Assert.AreEqual(SalesLine.Description, CourseLedgerEntry.Description, 'Dato incorrecto');
         Assert.AreEqual(-SalesLine.Quantity, CourseLedgerEntry.Quantity, 'Dato incorrecto');
         Assert.AreEqual(SalesLine."Unit Price", CourseLedgerEntry."Unit Price", 'Dato incorrecto');

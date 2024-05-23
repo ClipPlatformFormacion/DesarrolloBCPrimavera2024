@@ -1,4 +1,8 @@
-report 50101 "CLIP Courses & Editions"
+namespace ClipPlatform.Course.Reporting;
+
+using ClipPlatform.Course.MasterData;
+
+report 50101 "Courses & Editions"
 {
     Caption = 'Courses & Editions', comment = 'ESP="Cursos y Ediciones"';
     UsageCategory = ReportsAndAnalysis;
@@ -9,7 +13,7 @@ report 50101 "CLIP Courses & Editions"
     {
         dataitem(Course; "Course")
         {
-            dataitem(CourseEdition; "CLIP Course Edition")
+            dataitem(CourseEdition; "Course Edition")
             {
                 DataItemLinkReference = Course;
                 DataItemLink = "Course No." = field("No.");

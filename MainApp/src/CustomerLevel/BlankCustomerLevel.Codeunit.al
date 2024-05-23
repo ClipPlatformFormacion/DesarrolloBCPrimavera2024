@@ -1,6 +1,6 @@
 namespace ClipPlatform.CustomerLevel;
 
-codeunit 50102 "Blank Customer Level" implements "CLIP Customer Level"
+codeunit 50102 "Blank Customer Level" implements "Customer Level"
 {
     procedure GetDiscount(): Decimal
     begin

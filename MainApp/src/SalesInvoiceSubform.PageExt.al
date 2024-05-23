@@ -1,10 +1,14 @@
-pageextension 50101 "CLIP Sales Invoice Subform" extends "Sales Invoice Subform"
+namespace ClipPlatform.Course.Sales;
+
+using Microsoft.Sales.Document;
+
+pageextension 50101 "Sales Invoice Subform" extends "Sales Invoice Subform"
 {
     layout
     {
         addafter("No.")
         {
-            field("CLIP Course Edition"; Rec."CLIP Course Edition")
+            field("Course Edition"; Rec."Course Edition")
             {
                 ApplicationArea = All;
             }

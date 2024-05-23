@@ -1,4 +1,6 @@
-codeunit 50103 "CLIP Bronze Customer Level" implements "CLIP Customer Level"
+namespace ClipPlatform.CustomerLevel;
+
+codeunit 50103 "Bronze Customer Level" implements "Customer Level"
 {
     procedure GetDiscount(): Decimal
     begin

@@ -1,4 +1,6 @@
-page 50105 "CLIP Query"
+namespace ClipPlatform.Item;
+
+page 50105 "Query"
 {
     Caption = 'Query', comment = 'ESP="Query"';
     PageType = List;
@@ -13,7 +15,7 @@ page 50105 "CLIP Query"
             {
                 Caption = 'Execute Query', comment = 'ESP="Ejecutar query"';
                 ApplicationArea = All;
-                RunObject = query "CLIP Item Query";
+                RunObject = query "Item Query";
                 Image = ExecuteBatch;
             }
 
@@ -21,10 +23,11 @@ page 50105 "CLIP Query"
             {
                 Caption = 'Use Query', comment = 'ESP="Usar query"';
                 ApplicationArea = All;
+                Image = NextRecord;
 
                 trigger OnAction()
                 var
-                    ItemQuery: Query "CLIP Item Query";
+                    ItemQuery: Query "Item Query";
                     Counter: Integer;
                     Vendorname: Text[100];
                 begin

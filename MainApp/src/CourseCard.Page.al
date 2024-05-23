@@ -1,4 +1,8 @@
-page 50101 "CLIP Course Card"
+namespace ClipPlatform.Course.MasterData;
+
+using ClipPlatform.Course.Ledger;
+
+page 50101 "Course Card"
 {
     Caption = 'Course Card', Comment = 'ESP="Ficha curso"';
     PageType = Card;
@@ -47,7 +51,7 @@ page 50101 "CLIP Course Card"
             action(CourseEditions)
             {
                 Caption = 'Editions', Comment = 'ESP="Ediciones"';
-                RunObject = page "CLIP Course Editions";
+                RunObject = page "Course Editions";
                 RunPageLink = "Course No." = field("No.");
                 Image = ListPage;
             }
@@ -56,7 +60,7 @@ page 50101 "CLIP Course Card"
                 ApplicationArea = All;
                 Caption = 'Ledger E&ntries';
                 Image = ResourceLedger;
-                RunObject = Page "CLIP Course Ledger Entries";
+                RunObject = Page "Course Ledger Entries";
                 RunPageLink = "Course No." = field("No.");
                 RunPageView = sorting("Course No.")
                                   order(Descending);

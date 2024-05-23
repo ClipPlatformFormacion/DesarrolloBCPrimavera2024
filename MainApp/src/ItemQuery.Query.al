@@ -1,4 +1,9 @@
-query 50100 "CLIP Item Query"
+namespace ClipPlatform.Item;
+
+using Microsoft.Inventory.Item;
+using Microsoft.Purchases.Vendor;
+
+query 50100 "Item Query"
 {
     QueryType = Normal;
     OrderBy = descending(Name);

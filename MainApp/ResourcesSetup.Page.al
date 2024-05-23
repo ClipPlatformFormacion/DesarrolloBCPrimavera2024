@@ -1,4 +1,4 @@
-namespace ClipPlatform.Pages;
+namespace ClipPlatform.Course.Setup;
 
 using Microsoft.Projects.Resources.Resource;
 
@@ -81,6 +81,6 @@ page 50106 "Resources Setup"
     end;
 
     var
-        Customer: Record Microsoft.Sales.Customer.Customer;
+    // Customer: Record Microsoft.Sales.Customer.Customer;
 }
 

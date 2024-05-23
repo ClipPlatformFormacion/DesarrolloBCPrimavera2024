@@ -1,6 +1,10 @@
-enumextension 50100 "CLIP Sales Line Type" extends "Sales Line Type"
+namespace ClipPlatform.Course.Sales;
+
+using Microsoft.Sales.Document;
+
+enumextension 50100 "Sales Line Type" extends "Sales Line Type"
 {
-    value(50100; "CLIP Course")
+    value(50100; "Course")
     {
         Caption = 'Course', comment = 'ESP="Curso"';
     }

@@ -1,10 +1,14 @@
-pageextension 50103 "CLIP Posted SalesShptSubform" extends "Posted Sales Shpt. Subform"
+namespace ClipPlatform.Course.Sales;
+
+using Microsoft.Sales.History;
+
+pageextension 50103 "Posted Sales Shpt. Subform" extends "Posted Sales Shpt. Subform"
 {
     layout
     {
         addafter("No.")
         {
-            field("CLIP Course Edition"; Rec."CLIP Course Edition")
+            field("Course Edition"; Rec."Course Edition")
             {
                 ApplicationArea = All;
             }

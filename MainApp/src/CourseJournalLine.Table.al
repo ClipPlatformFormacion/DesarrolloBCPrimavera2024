@@ -1,4 +1,11 @@
-table 50104 "CLIP Course Journal Line"
+namespace ClipPlatform.Course.Posting;
+
+using ClipPlatform.Course.MasterData;
+using Microsoft.Finance.GeneralLedger.Setup;
+using Microsoft.Foundation.NoSeries;
+using Microsoft.Sales.Document;
+
+table 50104 "Course Journal Line"
 {
     Caption = 'Course Journal Line';
     DataClassification = CustomerContent;
@@ -55,7 +62,7 @@ table 50104 "CLIP Course Journal Line"
         field(7; "Course Edition"; Code[20])
         {
             Caption = 'Edition', comment = 'ESP="Edición"';
-            TableRelation = "CLIP Course Edition";
+            TableRelation = "Course Edition";
         }
         field(8; Description; Text[100])
         {
@@ -205,7 +212,7 @@ table 50104 "CLIP Course Journal Line"
     var
         // ResJnlTemplate: Record "Course Journal Template";
         // ResJnlBatch: Record "Course Journal Batch";
-        // CourseJournalLine: Record "CLIP Course Journal Line";
+        // CourseJournalLine: Record "Course Journal Line";
         Course: Record "Course";
         GLSetup: Record "General Ledger Setup";
         // NoSeriesMgt: Codeunit NoSeriesManagement;
@@ -296,7 +303,7 @@ table 50104 "CLIP Course Journal Line"
     procedure CopyFromSalesLine(SalesLine: Record "Sales Line")
     begin
         "Course No." := SalesLine."No.";
-        "Course Edition" := SalesLine."CLIP Course Edition";
+        "Course Edition" := SalesLine."Course Edition";
         Description := SalesLine.Description;
         // "Shortcut Dimension 1 Code" := SalesLine."Shortcut Dimension 1 Code";
         // "Shortcut Dimension 2 Code" := SalesLine."Shortcut Dimension 2 Code";
@@ -393,17 +400,17 @@ table 50104 "CLIP Course Journal Line"
     // end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnAfterCopyCourseJournalLineFromSalesHeader(var SalesHeader: Record "Sales Header"; var ResJournalLine: Record "CLIP Course Journal Line")
+    local procedure OnAfterCopyCourseJournalLineFromSalesHeader(var SalesHeader: Record "Sales Header"; var ResJournalLine: Record "Course Journal Line")
     begin
     end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnAfterCopyCourseJournalLineFromSalesLine(var SalesLine: Record "Sales Line"; var ResJnlLine: Record "CLIP Course Journal Line")
+    local procedure OnAfterCopyCourseJournalLineFromSalesLine(var SalesLine: Record "Sales Line"; var ResJnlLine: Record "Course Journal Line")
     begin
     end;
 
     // [IntegrationEvent(false, false)]
-    // local procedure OnAfterSetUpNewLine(var ResJournalLine: Record "CLIP Course Journal Line"; LastResJournalLine: Record "CLIP Course Journal Line")
+    // local procedure OnAfterSetUpNewLine(var ResJournalLine: Record "Course Journal Line"; LastResJournalLine: Record "Course Journal Line")
     // begin
     // end;
 

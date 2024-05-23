@@ -1,4 +1,6 @@
-enum 50100 "CLIP Course Type"
+namespace ClipPlatform.Course.MasterData;
+
+enum 50100 "Course Type"
 {
     Extensible = true;
 

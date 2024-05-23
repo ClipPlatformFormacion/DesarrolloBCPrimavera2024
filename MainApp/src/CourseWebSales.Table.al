@@ -44,7 +44,7 @@ table 50106 "Course Web Sales"
         field(9; "Course Edition"; Code[20])
         {
             Caption = 'Course Edition', comment = 'ESP="Edición curso"';
-            TableRelation = "CLIP Course Edition";
+            TableRelation = "Course Edition";
         }
         field(10; Quantity; Decimal)
         {

@@ -1,11 +1,15 @@
-page 50100 "CLIP Course List"
+namespace ClipPlatform.Course.MasterData;
+
+using ClipPlatform.Course.Ledger;
+
+page 50100 "Course List"
 {
     Caption = 'Courses', Comment = 'ESP="Cursos"';
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = "Course";
-    CardPageId = "CLIP Course Card";
+    CardPageId = "Course Card";
     Editable = false;
 
     layout
@@ -32,7 +36,7 @@ page 50100 "CLIP Course List"
                 ApplicationArea = All;
                 Caption = 'Import Courses', Comment = 'ESP="Importación de Cursos"';
                 Image = Import;
-                RunObject = XmlPort "CLIP Import Courses";
+                RunObject = XmlPort "Import Courses";
                 ToolTip = 'Import courses from an XML file.';
                 Promoted = true;
                 PromotedOnly = true;
@@ -43,7 +47,7 @@ page 50100 "CLIP Course List"
             action(CourseEditions)
             {
                 Caption = 'Editions', Comment = 'ESP="Ediciones"';
-                RunObject = page "CLIP Course Editions";
+                RunObject = page "Course Editions";
                 RunPageLink = "Course No." = field("No.");
                 Image = ListPage;
             }
@@ -52,7 +56,7 @@ page 50100 "CLIP Course List"
                 ApplicationArea = All;
                 Caption = 'Ledger E&ntries';
                 Image = ResourceLedger;
-                RunObject = Page "CLIP Course Ledger Entries";
+                RunObject = Page "Course Ledger Entries";
                 RunPageLink = "Course No." = field("No.");
                 RunPageView = sorting("Course No.")
                                   order(Descending);

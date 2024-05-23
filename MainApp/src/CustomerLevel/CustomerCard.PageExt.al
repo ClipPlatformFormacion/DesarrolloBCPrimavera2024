@@ -1,14 +1,18 @@
-pageextension 50106 "CLIP Customer Card" extends "Customer Card"
+namespace ClipPlatform.CustomerLevel;
+
+using Microsoft.Sales.Customer;
+
+pageextension 50106 "Customer Card" extends "Customer Card"
 {
     layout
     {
         addlast(General)
         {
-            field("CLIP Level"; Rec."CLIP Level")
+            field("Level"; Rec."Level")
             {
                 ApplicationArea = All;
             }
-            field("CLIP Discount"; Rec."CLIP Discount")
+            field("Discount"; Rec."Discount")
             {
                 ApplicationArea = All;
             }

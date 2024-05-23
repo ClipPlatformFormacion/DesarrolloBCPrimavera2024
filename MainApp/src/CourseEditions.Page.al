@@ -1,10 +1,12 @@
-page 50103 "CLIP Course Editions"
+namespace ClipPlatform.Course.MasterData;
+
+page 50103 "Course Editions"
 {
     Caption = 'Course Editions', Comment = 'ESP="Ediciones curso"';
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
-    SourceTable = "CLIP Course Edition";
+    SourceTable = "Course Edition";
 
     layout
     {

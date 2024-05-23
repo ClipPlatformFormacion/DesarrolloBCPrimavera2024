@@ -1,4 +1,11 @@
-codeunit 50153 "CLIP Library - Course"
+namespace ClipPlatform.Course.Testing;
+
+using ClipPlatform.Course.MasterData;
+using Microsoft.Finance.GeneralLedger.Setup;
+using Microsoft.Finance.VAT.Setup;
+using ClipPlatform.Course.Setup;
+
+codeunit 50153 "Library - Course"
 {
     procedure CreateCourse() Course: Record "Course"
     var
@@ -21,7 +28,7 @@ codeunit 50153 "CLIP Library - Course"
         Course.Modify(true);
     end;
 
-    procedure CreateEdition(CourseNo: Code[20]) CourseEdition: Record "CLIP Course Edition"
+    procedure CreateEdition(CourseNo: Code[20]) CourseEdition: Record "Course Edition"
     var
         LibraryRandom: Codeunit "Library - Random";
     begin
@@ -37,7 +44,7 @@ codeunit 50153 "CLIP Library - Course"
 
     local procedure CourseNoSeriesSetup()
     var
-        CoursesSetup: Record "CLIP Courses Setup";
+        CoursesSetup: Record "Courses Setup";
         LibraryUtility: Codeunit "Library - Utility";
         NoSeriesCode: Code[20];
     begin

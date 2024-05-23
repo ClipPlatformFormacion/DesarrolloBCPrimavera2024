@@ -1,10 +1,14 @@
-pageextension 50104 "CLIP Sales Cr. Memo Subform" extends "Sales Cr. Memo Subform"
+namespace ClipPlatform.Course.Sales;
+
+using Microsoft.Sales.Document;
+
+pageextension 50104 "Sales Cr. Memo Subform" extends "Sales Cr. Memo Subform"
 {
     layout
     {
         addafter("No.")
         {
-            field("CLIP Course Edition"; Rec."CLIP Course Edition")
+            field("Course Edition"; Rec."Course Edition")
             {
                 ApplicationArea = All;
             }
