@@ -7,7 +7,7 @@ page 50107 "Course Web Sales"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = "Course Web Sales";
-    Editable = false;
+    // Editable = false;   TODO: Uncomment this line to make the page read-only
 
     layout
     {
@@ -41,6 +41,14 @@ page 50107 "Course Web Sales"
                 Caption = 'Import File', comment = 'ESP="Importar archivo"';
                 RunObject = xmlport "Import Web Course Sales";
                 Image = Import;
+                Promoted = true;
+                PromotedOnly = true;
+            }
+            action(ProcessRecords)
+            {
+                Caption = 'Process Records', comment = 'ESP="Procesar registros"';
+                RunObject = codeunit "Web Sales Runner";
+                Image = Process;
                 Promoted = true;
                 PromotedOnly = true;
             }
