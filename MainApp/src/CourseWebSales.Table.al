@@ -8,6 +8,7 @@ table 50106 "Course Web Sales"
         field(1; "Entry No."; Integer)
         {
             Caption = 'Entry No.', comment = 'ESP="Nº movimiento"';
+            AutoIncrement = true;
         }
         field(2; "Web Document No."; Code[20])
         {
@@ -20,6 +21,8 @@ table 50106 "Course Web Sales"
         field(4; "Web Customer No."; Code[20])
         {
             Caption = 'Web Customer No.', comment = 'ESP="Nº cliente web"';
+            TableRelation = Customer;
+            ValidateTableRelation = false;
         }
         field(5; "Customer Name"; Text[100])
         {
@@ -36,10 +39,12 @@ table 50106 "Course Web Sales"
         field(8; "Course No."; Code[20])
         {
             Caption = 'Course No.', comment = 'ESP="Nº curso"';
+            TableRelation = Course;
         }
         field(9; "Course Edition"; Code[20])
         {
             Caption = 'Course Edition', comment = 'ESP="Edición curso"';
+            TableRelation = "CLIP Course Edition";
         }
         field(10; Quantity; Decimal)
         {

@@ -32,14 +32,13 @@ page 50107 "Course Web Sales"
     {
         area(Processing)
         {
-            action(ActionName)
+            action(ImportFile)
             {
-                ApplicationArea = All;
-
-                trigger OnAction()
-                begin
-
-                end;
+                Caption = 'Import File', comment = 'ESP="Importar archivo"';
+                RunObject = xmlport "Import Web Course Sales";
+                Image = Import;
+                Promoted = true;
+                PromotedOnly = true;
             }
         }
     }

@@ -596,6 +596,12 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page Course Web Sales - Property Caption</note>
           <target>Ventas de cursos en la web</target>
         </trans-unit>
+        <trans-unit id="Page 2454715175 - Action 2197396733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import File</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Importar archivo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Web Sales - Action ImportFile - Property Caption</note>
+          <target>Importar archivo</target>
+        </trans-unit>
         <trans-unit id="Report 3019079251 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Courses &amp; Editions</source>
           <note from="Developer" annotates="general" priority="2">ESP="Cursos y Ediciones"</note>
@@ -661,6 +667,12 @@
           <note from="Developer" annotates="general" priority="2">ESP="Importación de Cursos"</note>
           <note from="Xliff Generator" annotates="general" priority="3">XmlPort CLIP Import Courses - Property Caption</note>
           <target>Importación de Cursos</target>
+        </trans-unit>
+        <trans-unit id="XmlPort 1331604884 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Web Course Sales</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Importar ventas de cursos en la web"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort Import Web Course Sales - Property Caption</note>
+          <target>Importar ventas de cursos en la web</target>
         </trans-unit>
         <trans-unit id="PageExtension 1573979678 - Action 1585226249 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3332899200">
           <source>Export Sales Orders</source>
