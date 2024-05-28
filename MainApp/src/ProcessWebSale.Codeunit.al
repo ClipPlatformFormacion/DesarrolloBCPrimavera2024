@@ -1,3 +1,10 @@
+namespace ClipPlatform.Course.Sales;
+
+using Microsoft.Sales.Document;
+using Microsoft.Sales.Customer;
+using ClipPlatform.Course.Setup;
+using Microsoft.Sales.Posting;
+
 codeunit 50106 "Process Web Sale"
 {
     TableNo = "Course Web Sales";

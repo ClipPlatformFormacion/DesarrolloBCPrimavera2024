@@ -7,7 +7,7 @@ page 50107 "Course Web Sales"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = "Course Web Sales";
-    // Editable = false;   TODO: Uncomment this line to make the page read-only
+    Editable = false;
 
     layout
     {
