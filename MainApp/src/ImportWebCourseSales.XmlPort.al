@@ -1,3 +1,5 @@
+namespace ClipPlatform.Course.Sales;
+
 xmlport 50102 "Import Web Course Sales"
 {
     Caption = 'Import Web Course Sales', comment = 'ESP="Importar ventas de cursos en la web"';

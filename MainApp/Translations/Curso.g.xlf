@@ -453,10 +453,100 @@
           <note from="Developer" annotates="general" priority="2">ESP="Imprimir detalles"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Courses &amp; Editions - Control PrintDetailsControl - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 2454715175 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Course Web Sales</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ventas de cursos en la web"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2454715175 - Field 1535828835 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Course Edition</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Edición curso"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Course Edition - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2454715175 - Field 1667959142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Course No.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº curso"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Course No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2454715175 - Field 1425519166 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Address</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Dirección cliente"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Customer Address - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2454715175 - Field 1171137197 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Name</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nombre cliente"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Customer Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2454715175 - Field 580412389 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Date</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Fecha documento"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Document Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2454715175 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº movimiento"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2454715175 - Field 2852966117 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Error Message</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Mensaje de error"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Error Message - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2454715175 - Field 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quantity</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Cantidad"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2454715175 - Field 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Estado"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2454715175 - Field 2937233469 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Price</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Precio unitario"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Unit Price - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2454715175 - Field 617267791 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Registration No.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="CIF/NIF"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field VAT Registration No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2454715175 - Field 4113200037 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Web Customer No.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº cliente web"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Web Customer No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2454715175 - Field 2255550884 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Web Document No.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº documento web"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Web Document No. - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Codeunit 202725597 - Method 2157820504 - NamedType 1176815304" size-unit="char" translate="yes" xml:space="preserve">
           <source>The current sale for course %1 edition %2 will exceed the maximum students %3 (%4)</source>
           <note from="Developer" annotates="general" priority="2">ESP="La venta actual para el curso %1 edición %2 superará el número máximo de alumnos %3 (ventas previas: %4)"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit Course - Sales Management - Method CheckSalesForCourseEdition - NamedType MaxStudentsExceededMsg</note>
+        </trans-unit>
+        <trans-unit id="Page 2454715175 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Course Web Sales</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ventas de cursos en la web"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Web Sales - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2454715175 - Action 2197396733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import File</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Importar archivo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Web Sales - Action ImportFile - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2454715175 - Action 3206609519 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Process Records</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Procesar registros"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Course Web Sales - Action ProcessRecords - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="XmlPort 1331604884 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Web Course Sales</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Importar ventas de cursos en la web"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">XmlPort Import Web Course Sales - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1173465396 - Field 1535828835 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1173465396">
           <source>Course Edition</source>
@@ -488,6 +578,26 @@
           <note from="Developer" annotates="general" priority="2">ESP="Edición curso"</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Sales Shipment Line - Field Course Edition - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Enum 619119249 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2">ESP=" "</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Processing Status - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 619119249 - EnumValue 2248886284 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Error</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Error"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Processing Status - EnumValue Error - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 619119249 - EnumValue 3208180638 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Processed</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Procesado"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Processing Status - EnumValue Processed - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 619119249 - EnumValue 3862845261 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Processing</source>
+          <note from="Developer" annotates="general" priority="2">ESP="En Proceso"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Processing Status - EnumValue Processing - Property Caption</note>
+        </trans-unit>
         <trans-unit id="EnumExtension 1710557762 - EnumValue 3534050887 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Enum 1710557762">
           <source>Course</source>
           <note from="Developer" annotates="general" priority="2">ESP="Curso"</note>
@@ -503,10 +613,35 @@
           <note from="Developer" annotates="general" priority="2">ESP="Nº serie curso"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Courses Setup - Field Course Nos. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3691325147 - Field 410940989 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Posting Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Courses Setup - Field Customer Posting Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3691325147 - Field 633819257 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Bus. Posting Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Courses Setup - Field Gen. Bus. Posting Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3691325147 - Field 3855271124 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Method Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Courses Setup - Field Payment Method Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3691325147 - Field 966740350 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Terms Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Courses Setup - Field Payment Terms Code - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3691325147 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Primary Key</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Courses Setup - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3691325147 - Field 1844012642 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Bus. Posting Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Courses Setup - Field VAT Bus. Posting Group - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2189160554 - Field 1296262074 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>MyField</source>
@@ -527,6 +662,11 @@
           <source>Specifies the number series code you can use to assign numbers to Courses.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Courses Setup - Control Course Nos. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3691325147 - Control 2654119451 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Automation</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Automatización ventas"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Courses Setup - Control SalesAutomatization - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2189160554 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Resources Setup</source>
@@ -612,81 +752,6 @@
           <source>Export Sales Orders</source>
           <note from="Developer" annotates="general" priority="2">ESP="Exportación de Pedidos de Venta"</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Sales Order List - Action Export Sales Orders - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2454715175 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Course Web Sales</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Ventas de cursos en la web"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2454715175 - Field 1535828835 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Course Edition</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Edición curso"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Course Edition - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2454715175 - Field 1667959142 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Course No.</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Nº curso"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Course No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2454715175 - Field 1425519166 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Customer Address</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Dirección cliente"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Customer Address - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2454715175 - Field 1171137197 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Customer Name</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Nombre cliente"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Customer Name - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2454715175 - Field 580412389 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Document Date</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Fecha documento"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Document Date - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2454715175 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Entry No.</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Nº movimiento"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Entry No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2454715175 - Field 2704404533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Quantity</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Cantidad"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Quantity - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2454715175 - Field 2937233469 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Unit Price</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Precio unitario"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Unit Price - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2454715175 - Field 617267791 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>VAT Registration No.</source>
-          <note from="Developer" annotates="general" priority="2">ESP="CIF/NIF"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field VAT Registration No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2454715175 - Field 4113200037 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Web Customer No.</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Nº cliente web"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Web Customer No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2454715175 - Field 2255550884 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Web Document No.</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Nº documento web"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Course Web Sales - Field Web Document No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2454715175 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Course Web Sales</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Ventas de cursos en la web"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Web Sales - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2454715175 - Action 2197396733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Import File</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Importar archivo"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Web Sales - Action ImportFile - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="XmlPort 1331604884 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Import Web Course Sales</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Importar ventas de cursos en la web"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">XmlPort Import Web Course Sales - Property Caption</note>
         </trans-unit>
       </group>
     </body>

@@ -1,3 +1,5 @@
+namespace ClipPlatform.Course.Sales;
+
 page 50107 "Course Web Sales"
 {
     Caption = 'Course Web Sales', comment = 'ESP="Ventas de cursos en la web"';
@@ -14,6 +16,8 @@ page 50107 "Course Web Sales"
             repeater(RepeaterControl)
             {
                 field("Entry No."; Rec."Entry No.") { }
+                field(Status; Rec.Status) { }
+                field("Error Message"; Rec."Error Message") { }
                 field("Web Document No."; Rec."Web Document No.") { }
                 field("Document Date"; Rec."Document Date") { }
                 field("Web Customer No."; Rec."Web Customer No.") { }
@@ -37,6 +41,14 @@ page 50107 "Course Web Sales"
                 Caption = 'Import File', comment = 'ESP="Importar archivo"';
                 RunObject = xmlport "Import Web Course Sales";
                 Image = Import;
+                Promoted = true;
+                PromotedOnly = true;
+            }
+            action(ProcessRecords)
+            {
+                Caption = 'Process Records', comment = 'ESP="Procesar registros"';
+                RunObject = codeunit "Web Sales Runner";
+                Image = Process;
                 Promoted = true;
                 PromotedOnly = true;
             }
