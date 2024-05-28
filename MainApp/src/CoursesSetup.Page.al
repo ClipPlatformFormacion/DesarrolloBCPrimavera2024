@@ -5,7 +5,7 @@ using ClipPlatform.Course.MasterData;
 page 50102 "Courses Setup"
 {
     AccessByPermission = TableData "Course" = R;
-    ApplicationArea = Jobs;
+    ApplicationArea = All;
     Caption = 'Courses Setup', Comment = 'ESP="Conf. cursos"';
     DeleteAllowed = false;
     InsertAllowed = false;
@@ -22,9 +22,17 @@ page 50102 "Courses Setup"
                 Caption = 'Numbering', Comment = 'ESP="Numeración"';
                 field("Course Nos."; Rec."Course Nos.")
                 {
-                    ApplicationArea = Jobs;
                     ToolTip = 'Specifies the number series code you can use to assign numbers to Courses.';
                 }
+            }
+            group(SalesAutomatization)
+            {
+                Caption = 'Sales Automation', comment = 'ESP="Automatización ventas"';
+                field("Customer Posting Group"; Rec."Customer Posting Group") { }
+                field("Gen. Bus. Posting Group"; Rec."Gen. Bus. Posting Group") { }
+                field("VAT Bus. Posting Group"; Rec."VAT Bus. Posting Group") { }
+                field("Payment Terms Code"; Rec."Payment Terms Code") { }
+                field("Payment Method Code"; Rec."Payment Method Code") { }
             }
         }
         area(factboxes)
