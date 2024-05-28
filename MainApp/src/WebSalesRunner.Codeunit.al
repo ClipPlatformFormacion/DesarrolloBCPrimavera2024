@@ -22,7 +22,7 @@ codeunit 50105 "Web Sales Runner"
                     CourseWebSales.Status := CourseWebSales.Status::Processed
                 else begin
                     CourseWebSales.Status := CourseWebSales.Status::Error;
-                    CourseWebSales."Error Message" := GetLastErrorText();
+                    CourseWebSales."Error Message" := CopyStr(GetLastErrorText(), 1, MaxStrLen(CourseWebSales."Error Message"));
                 end;
                 CourseWebSales.Modify();
 
