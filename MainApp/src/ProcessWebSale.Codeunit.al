@@ -1,22 +1,16 @@
 codeunit 50106 "Process Web Sale"
 {
-    var
-        GlobalCourseWebSales: Record "Course Web Sales";
+    TableNo = "Course Web Sales";
 
     trigger OnRun()
     var
         Customer: Record Customer;
     begin
         Customer.Init();
-        Customer."No." := GlobalCourseWebSales."Web Customer No.";
+        Customer."No." := Rec."Web Customer No.";
         if Customer.Insert() then;
 
-        if GlobalCourseWebSales."Entry No." = 3 then
-            Error('Processing Course Web Sale %1', GlobalCourseWebSales."Entry No.");
-    end;
-
-    procedure SetParameters(CourseWebSales: Record "Course Web Sales")
-    begin
-        GlobalCourseWebSales := CourseWebSales;
+        if Rec."Entry No." = 3 then
+            Error('Processing Course Web Sale %1', Rec."Entry No.");
     end;
 }

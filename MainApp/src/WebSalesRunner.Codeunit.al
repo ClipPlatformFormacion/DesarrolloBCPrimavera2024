@@ -20,8 +20,7 @@ codeunit 50105 "Web Sales Runner"
                 CourseWebSales.Modify();
                 Commit();
 
-                ProcessWebSale.SetParameters(CourseWebSales);
-                if ProcessWebSale.Run() then
+                if ProcessWebSale.Run(CourseWebSales) then
                     CourseWebSales.Status := CourseWebSales.Status::Processed
                 else begin
                     CourseWebSales.Status := CourseWebSales.Status::Error;
