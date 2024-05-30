@@ -753,6 +753,11 @@
           <note from="Developer" annotates="general" priority="2">ESP="Exportación de Pedidos de Venta"</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Sales Order List - Action Export Sales Orders - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3534050887 - Field 4141159088 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3534050887">
+          <source>Un nuevo campo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Course - Field Un nuevo campo - Property Caption</note>
+        </trans-unit>
       </group>
     </body>
   </file>
