@@ -65,4 +65,12 @@ page 50100 "Course List"
             }
         }
     }
+
+
+#if MISIMBOLODEPREPROCESADO
+    trigger OnOpenPage()
+    begin
+        Rec.myprocedure();
+    end;
+#endif
 }

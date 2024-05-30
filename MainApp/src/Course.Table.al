@@ -166,4 +166,15 @@ table 50100 "Course"
     local procedure OnBeforeAssistEdit(var Course: Record "Course"; xOldCourse: Record "Course"; var IsHandled: Boolean; var Result: Boolean)
     begin
     end;
+
+#if MISIMBOLODEPREPROCESADO
+    procedure MyProcedure()
+    begin
+        MiVariable := 1;
+        Message('Hello World %1', MiVariable);
+    end;
+
+    var
+        MiVariable: Integer;
+#endif
 }
