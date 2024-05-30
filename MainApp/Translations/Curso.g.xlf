@@ -98,6 +98,11 @@
           <note from="Developer" annotates="general" priority="2">ESP="Nombre"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Course - Field Name - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3534050887 - Field 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>A tooltip</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Una ayuda"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course - Field No. - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Table 3534050887 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>No.</source>
           <note from="Developer" annotates="general" priority="2">ESP="Nº"</note>
@@ -232,11 +237,6 @@
           <source>Course</source>
           <note from="Developer" annotates="general" priority="2">ESP="Curso"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Course Card - Control Course - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1158824803 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>A tooltip</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Una ayuda"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Card - Control No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1158824803 - Control 1450094168 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Invoicing</source>

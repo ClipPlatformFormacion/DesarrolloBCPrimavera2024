@@ -16,7 +16,7 @@ table 50100 "Course"
         {
             Caption = 'No.', Comment = 'ESP="Nº"';
             DataClassification = CustomerContent;
-
+            ToolTip = 'A tooltip', Comment = 'ESP="Una ayuda"';
             trigger OnValidate()
             var
                 CoursesSetup: Record "Courses Setup";

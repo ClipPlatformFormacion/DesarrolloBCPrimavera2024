@@ -104,6 +104,12 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table Course - Field Name - Property Caption</note>
           <target>Nombre</target>
         </trans-unit>
+        <trans-unit id="Table 3534050887 - Field 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>A tooltip</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Una ayuda"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Course - Field No. - Property ToolTip</note>
+          <target>Una ayuda</target>
+        </trans-unit>
         <trans-unit id="Table 3534050887 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>No.</source>
           <note from="Developer" annotates="general" priority="2">ESP="Nº"</note>
@@ -255,12 +261,6 @@
           <note from="Developer" annotates="general" priority="2">ESP="Curso"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Course Card - Control Course - Property Caption</note>
           <target>Curso</target>
-        </trans-unit>
-        <trans-unit id="Page 1158824803 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>A tooltip</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Una ayuda"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Course Card - Control No. - Property ToolTip</note>
-          <target>Una ayuda</target>
         </trans-unit>
         <trans-unit id="Page 1158824803 - Control 1450094168 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Invoicing</source>
@@ -690,10 +690,35 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table Courses Setup - Field Course Nos. - Property Caption</note>
           <target>Nº serie curso</target>
         </trans-unit>
+        <trans-unit id="Table 3691325147 - Field 410940989 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Posting Group</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Courses Setup - Field Customer Posting Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3691325147 - Field 633819257 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Gen. Bus. Posting Group</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Courses Setup - Field Gen. Bus. Posting Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3691325147 - Field 3855271124 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Method Code</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Courses Setup - Field Payment Method Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3691325147 - Field 966740350 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Terms Code</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Courses Setup - Field Payment Terms Code - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3691325147 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Primary Key</source>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table Courses Setup - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3691325147 - Field 1844012642 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Bus. Posting Group</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Courses Setup - Field VAT Bus. Posting Group - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2189160554 - Field 1296262074 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>MyField</source>
@@ -716,6 +741,12 @@
           <source>Specifies the number series code you can use to assign numbers to Courses.</source>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Page Courses Setup - Control Course Nos. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3691325147 - Control 2654119451 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Automation</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Automatización ventas"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Courses Setup - Control SalesAutomatization - Property Caption</note>
+          <target>Automatización ventas</target>
         </trans-unit>
         <trans-unit id="Page 2189160554 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Resources Setup</source>
@@ -811,6 +842,11 @@
           <note from="Developer" annotates="general" priority="2">ESP="Exportación de Pedidos de Venta"</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Sales Order List - Action Export Sales Orders - Property Caption</note>
           <target>Exportación de Pedidos de Venta</target>
+        </trans-unit>
+        <trans-unit id="Table 3534050887 - Field 4141159088 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3534050887">
+          <source>Un nuevo campo</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Course - Field Un nuevo campo - Property Caption</note>
         </trans-unit>
       </group>
     </body>

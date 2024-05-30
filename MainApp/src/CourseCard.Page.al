@@ -19,7 +19,6 @@ page 50101 "Course Card"
                 Caption = 'Course', Comment = 'ESP="Curso"';
                 field("No."; Rec."No.")
                 {
-                    ToolTip = 'A tooltip', Comment = 'ESP="Una ayuda"';
                     trigger OnAssistEdit()
                     begin
                         if Rec.AssistEdit(xRec) then
