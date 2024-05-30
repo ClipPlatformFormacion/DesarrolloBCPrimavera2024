@@ -19,8 +19,8 @@ table 50100 "Course"
 
             trigger OnValidate()
             var
-                ResSetup: Record "Courses Setup";
-                NoSeriesMgt: Codeunit NoSeriesManagement;
+                CoursesSetup: Record "Courses Setup";
+                NoSeries: Codeunit "No. Series";
                 IsHandled: Boolean;
             begin
                 IsHandled := false;
@@ -29,8 +29,8 @@ table 50100 "Course"
                     exit;
 
                 if "No." <> xRec."No." then begin
-                    ResSetup.Get();
-                    NoSeriesMgt.TestManual(ResSetup."Course Nos.");
+                    CoursesSetup.Get();
+                    NoSeries.TestManual(CoursesSetup."Course Nos.");
                     "No. Series" := '';
                 end;
             end;
@@ -106,8 +106,9 @@ table 50100 "Course"
 
     trigger OnInsert()
     var
-        ResSetup: Record "Courses Setup";
-        NoSeriesMgt: Codeunit NoSeriesManagement;
+        Course: Record Course;
+        CoursesSetup: Record "Courses Setup";
+        NoSeries: Codeunit "No. Series";
         IsHandled: Boolean;
     begin
         IsHandled := false;
@@ -116,9 +117,16 @@ table 50100 "Course"
             exit;
 
         if "No." = '' then begin
-            ResSetup.Get();
-            ResSetup.TestField("Course Nos.");
-            NoSeriesMgt.InitSeries(ResSetup."Course Nos.", xRec."No. Series", 0D, "No.", "No. Series");
+            CoursesSetup.Get();
+            CoursesSetup.TestField("Course Nos.");
+            "No. Series" := CoursesSetup."Course Nos.";
+            if NoSeries.AreRelated("No. Series", xRec."No. Series") then
+                "No. Series" := xRec."No. Series";
+            "No." := NoSeries.GetNextNo("No. Series");
+            Course.ReadIsolation(IsolationLevel::ReadUncommitted);
+            Course.SetLoadFields("No.");
+            while Course.Get("No.") do
+                "No." := NoSeries.GetNextNo("No. Series");
         end;
     end;
 
@@ -126,7 +134,7 @@ table 50100 "Course"
     var
         Res: Record "Course";
         ResSetup: Record "Courses Setup";
-        NoSeriesMgt: Codeunit NoSeriesManagement;
+        NoSeries: Codeunit "No. Series";
         IsHandled: Boolean;
     begin
         IsHandled := false;
@@ -137,10 +145,8 @@ table 50100 "Course"
         Res := Rec;
         ResSetup.Get();
         ResSetup.TestField("Course Nos.");
-        if NoSeriesMgt.SelectSeries(ResSetup."Course Nos.", OldRes."No. Series", Res."No. Series") then begin
-            ResSetup.Get();
-            ResSetup.TestField("Course Nos.");
-            NoSeriesMgt.SetSeries(Res."No.");
+        if NoSeries.LookupRelatedNoSeries(ResSetup."Course Nos.", OldRes."No. Series", Res."No. Series") then begin
+            Res."No." := NoSeries.GetNextNo(Res."No. Series");
             Rec := Res;
             exit(true);
         end;
