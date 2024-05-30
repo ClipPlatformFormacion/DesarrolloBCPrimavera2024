@@ -48,7 +48,10 @@ codeunit 50153 "Library - Course"
         LibraryUtility: Codeunit "Library - Utility";
         NoSeriesCode: Code[20];
     begin
-        CoursesSetup.Get();
+        if not CoursesSetup.Get() then begin
+            CoursesSetup.Init();
+            CoursesSetup.Insert(true);
+        end;
         NoSeriesCode := LibraryUtility.GetGlobalNoSeriesCode();
         if NoSeriesCode <> CoursesSetup."Course Nos." then begin
             CoursesSetup.Validate("Course Nos.", LibraryUtility.GetGlobalNoSeriesCode());
